@@ -1,0 +1,682 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  :focus,
+  :active {
+	outline: none;
+  }
+  a:focus,
+  a:active {
+	outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+	display: block;
+  }
+  
+  html,
+  body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+	font-family: inherit;
+  }
+  
+  input::-ms-clear {
+	display: none;
+  }
+  button {
+	cursor: pointer;
+  }
+  button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+  }
+  a,
+  a:visited {
+	text-decoration: none;
+  }
+  a:hover {
+	text-decoration: none;
+  }
+  ul li {
+	list-style: none;
+  }
+  img {
+	vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-size: inherit;
+	font-weight: 400;
+  }
+  /*--------------------*/
+  
+  .bigred {
+	font-size: 20px;
+	color: red;
+  }
+  
+  /*Обнуление*/
+  
+  * {
+	color: black;
+  }
+  
+  body {
+	font-family: "Nunito", sans-serif;
+	font-size: 20px;
+  }
+
+  .box {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  p {
+	padding-top: 30px;
+    padding-left: 5.3vw;
+  }
+
+  h2{
+	padding-top: 70px;
+	font-size: 30px;
+  	padding-left: 5.3vw;
+  }
+  
+  header {
+	display: flex;
+    justify-content: center; 
+  }
+  
+  nav {
+	font-size: 18px;
+	height: 50px;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	flex-wrap: wrap;
+  }
+
+nav a:hover {
+	color: #bb7343;
+	transition: 0.7s;
+	transition-delay: 0.35s;
+
+}
+  
+  .beforePhoto {
+	width: 790px;
+	height: 718px;
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+  }
+  
+  .photo {
+	width: 576px;
+	height: 718px;
+	background-color: #bb7343;
+  }
+  
+  .logo {
+	padding-left: 5.3vw;
+	font-family: "Dancing Script", cursive;
+	font-size: 30px;
+  }
+  
+  /* .logo:hover {
+	padding-left: 70px;
+	font-family: "Dancing Script", cursive;
+	font-size: 78px;
+	color:green;
+  } */
+  
+  .links {
+	display: flex;
+	padding-right: 5.3vw;
+	margin-left: auto;
+  }
+  
+  .link {
+	margin-left: 3vw;
+	position: relative;
+	overflow: hidden;
+	padding: 5px 0;
+	transition: 0.2s;
+  }
+
+
+  .linkline {
+	position: absolute;
+	display: block;
+  }
+
+  .linkt {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #ba8b6b);
+  }
+
+  .linkb {
+	bottom: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, rgba(27,104,129,1));
+  }
+
+  .link:hover .linkt {
+	left: 100%;
+	transition: 0.7s;
+	transition-delay: 0.1s;
+  }
+
+  .link:hover .linkb {
+	left: 100%;
+	transition: 0.7s;
+	transition-delay: 0.3s;
+  }
+
+  .motivation {
+	padding-left: 5.3vw;
+	padding-top: 110px;
+	font-size: 40px;
+	color: white;
+	line-height: 1.3em;
+  }
+  
+  h1 {
+	padding-left: 5.3vw;
+	padding-top: 130px;
+	color: white;
+	line-height: 1.5em;
+	font-size: 24px;
+  }
+  
+  .name {
+	padding-right: 5.3vw;
+	padding-top: 130px;
+	font-size: 30px;
+	color: white;
+	font-family: "Dancing Script", cursive;
+	float: right;
+  }
+  
+  /*Слайдер начало*/
+  .photoline {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	padding: 0 40px;
+  }
+  
+  .slidephoto {
+	height: 80vh;
+	border-radius: 8px;
+	margin: 0 10px;
+	color: #fff;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+  }
+
+  /* .slidephoto.active {
+	flex: 10;
+  } */
+
+  /*Слайдер конец*/
+
+  .steps {
+	padding: 60px 0 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+  }
+
+  .step img {
+	width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+	.step p {
+		padding: 65px 61px 10px 61px;
+	}
+
+  .free{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+  }
+  .free1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 70px;
+	width: 50%;
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
+	background: -webkit-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
+	background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#41658e",GradientType=1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	border-top: solid black 4px;
+  }
+
+  .free2 {
+	width: 50%;
+  }
+
+  .imgpresent {
+	  height: 150px;
+	  width: 150px;
+	  margin-right: 5.3vw;
+	  position: absolute;
+	  left: -14%;
+	  top: -50px;
+  }
+/* 
+  .firstrecord {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .contacts {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 10px;
+	margin-top: 70px;
+	width: 30%;
+	height: auto;
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  } */
+  
+  h5 {
+	padding-left: 5.3vw;
+	line-height: 1.3em;
+	color: #ffffff;
+	font-size: 20px;
+  }
+
+  #priceLesson {
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+  }
+
+  .price {
+	width: 100%;
+	height: auto;
+	background: rgb(2,0,36);
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
+	background: -webkit-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
+	background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+	padding-bottom: 30px;
+	border-top: solid black 4px;
+	border-bottom: solid black 4px;
+	position: relative;
+  }
+
+
+  .price p {
+	padding-left: 0;
+  }
+
+  .pricesection {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	padding-left: 11.37vh;
+	padding-right: 11.37vh;
+  }
+
+  .pricesection1, .pricesection2, .pricesection3 {
+	  padding: 20px 80px;
+  }
+
+  span {
+	  font-size: 40px;
+  }
+
+
+
+  /*Слайдер начало*/
+  .container {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	padding: 0 40px;
+	
+  }
+  
+  .slide {
+	height: 80vh;
+	border-radius: 8px;
+	margin: 10px; 
+	cursor: pointer;
+	color: #fff;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 500ms ease-in-out;
+	filter: grayscale(100%)
+  }
+  .slide h3 {
+	position: absolute;
+	font-size: 24px;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+  }
+  
+  .slide.active {
+	flex: 10;
+	filter: none;
+  }
+  
+  .slide.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  h3 {
+	color: white;
+  }
+  /*Слайдер конец*/
+
+  
+  footer {
+	width: 100%;
+	height: 100px;
+	background-color: #ba8b6b;
+	text-align: center;
+	padding-left: 70px;
+	margin-top: 10px;
+  }
+
+  footer span {
+	font-family: "Nunito", sans-serif;
+	font-size: 30px;
+	color: #fff;
+  }
+  
+  h4 {
+	padding: 30px 10px;
+	font-size: 30px;
+	color: white;
+	font-family: "Dancing Script", cursive;
+	display: inline-block;
+  }
+
+  .x{
+	font-size: 24px;
+	font-family: "Nunito", sans-serif;
+  }
+  
+  sup {
+	color: white;
+	font-family: "Dancing Script", cursive;
+	font-size: 18px;
+  }
+
+  .egupych {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	display: inline-block;
+  }
+
+/*992-1200px */
+@media screen  and (max-width: 1200px) {
+    .box {
+        width: 970px;
+    }
+}
+
+/* 768-992px */
+@media screen  and (max-width: 992px) {
+    .box {
+        width: 720px;
+    }
+    
+    .linkNone {
+      display: none;
+    }
+  .price {
+        font-size:20px;
+  }
+  span {
+    font-size:30px;
+  }
+}
+
+/* 576-768px */
+@media screen  and (max-width: 768px) {
+	
+	header {
+		width: 100%;
+	}
+
+	.logo {
+		padding-left: 3vw;
+	}
+	h1 {
+		padding-top: 18px;
+		color: white;
+		line-height: 1.5em;
+		font-size: 14px;
+		padding-left: 3vw;
+	
+	  }
+   .price {
+        font-size:15px;
+		display: none;
+  }
+  .pricesection {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	padding-left: 3vh;
+	padding-right: 3vh;
+	padding-bottom: none;
+	margin-bottom: none;
+	display: none;
+  }
+
+  .pricesection1, .pricesection2, .pricesection3 {
+	  padding: 5px 20px;
+	  margin-bottom: none;
+	  display: none;
+  }
+    span {
+    font-size:25px;
+	display: none;
+  }
+
+  .photoline {
+	margin: 20 0 0 0px;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	padding: 0 10px;
+  }
+
+  .slidephoto {
+	height: 20vh;
+	padding: none;
+	margin: none;
+  }
+
+  .container {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	padding: 0 10px;
+	
+  }
+  .slide {
+	height: 20vh;
+	padding: none;
+	margin: none;
+  }
+
+  .beforePhoto {
+	width: 100%;
+	height: auto;
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+  }
+  
+  .photo {
+	display: none;
+  }
+  .motivation {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	color: white;
+	line-height: 1.3em;
+	padding-left: 3vw;
+  }
+  
+  .name {
+	/* padding-right: 5.3vw; */
+	padding-top: 60px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	color: white;
+	font-family: "Dancing Script", cursive;
+	float: right;
+  }
+  
+  h2 {
+	  font-size: 20px;
+	  padding-left: 3vw;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  margin: 0;
+  }
+  p,h5 {
+	  font-size: 14px;
+	  padding-left: 3vw;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  margin: 0;
+  }
+  .steps {
+	  display: none;
+  }
+  .link {
+	  font-size: 14px;
+  }
+  h6{
+	  font-size: 24px;
+  }
+  .free1 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	border-top: solid black 4px;
+	display: none;
+  }
+
+  .free2 {
+	width: 100%;
+	padding-bottom: 30px;
+	display: none;
+  }
+
+  .imgpresent {
+	  height: 150px;
+	  width: 150px;
+	  margin-right: 5.3vw;
+	  position: absolute;
+	  left: -14%;
+	  top: -50px;
+	  display: none;
+  }
+  .firstrecord {
+	  display: none;
+  }
+  h3 {
+	  font-size: 10px;
+  }
+  }
+
+/* 0-576px */
+@media screen  and (max-width: 576px) {
+    .box {
+        width: 90%;
+    }
+  .linkNoneToo {
+    display: none;
+  }
+   .price {
+        font-size:10px;
+  }
+    span {
+    font-size:20px;
+  }
+  }
