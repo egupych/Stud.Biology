@@ -89,15 +89,16 @@
   * {
 	color: black;
   }
+
+  /* оставляет только то что водит в область */
+  html, body {
+	  width:100%; 
+	  overflow-x:hidden
+	} 
   
   body {
 	font-family: "Nunito", sans-serif;
 	font-size: 20px;
-  }
-
-  .box {
-    width: 1170px;
-    margin: 0 auto;
   }
 
   p {
@@ -136,18 +137,22 @@ nav a:hover {
 }
   
   .beforePhoto {
-	width: 790px;
-	height: 718px;
+	width: 60%;
+	height: auto;
 	background: rgb(2,0,36);
 	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+
   }
   
+  .photoDiv{
+	  width: 40%;
+  }
   .photo {
-	width: 576px;
-	height: 718px;
+	width: 100%;
+	/* height: 718px; */
 	background-color: #bb7343;
   }
   
@@ -213,7 +218,7 @@ nav a:hover {
   }
 
   .motivation {
-	padding-left: 5.3vw;
+	padding-left: 70px;
 	padding-top: 110px;
 	font-size: 40px;
 	color: white;
@@ -221,16 +226,14 @@ nav a:hover {
   }
   
   h1 {
-	padding-left: 5.3vw;
-	padding-top: 130px;
+	padding-left: 70px;
 	color: white;
 	line-height: 1.5em;
 	font-size: 24px;
   }
   
   .name {
-	padding-right: 5.3vw;
-	padding-top: 130px;
+	padding-right: 70px;
 	font-size: 30px;
 	color: white;
 	font-family: "Dancing Script", cursive;
@@ -246,7 +249,7 @@ nav a:hover {
   }
   
   .slidephoto {
-	height: 80vh;
+	height: 550px;
 	border-radius: 8px;
 	margin: 0 10px;
 	color: #fff;
@@ -312,7 +315,7 @@ nav a:hover {
   .imgpresent {
 	  height: 150px;
 	  width: 150px;
-	  margin-right: 5.3vw;
+
 	  position: absolute;
 	  left: -14%;
 	  top: -50px;
@@ -341,7 +344,7 @@ nav a:hover {
   } */
   
   h5 {
-	padding-left: 5.3vw;
+	padding-left: 70px;
 	line-height: 1.3em;
 	color: #ffffff;
 	font-size: 20px;
@@ -363,7 +366,6 @@ nav a:hover {
 	background: -webkit-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
 	background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
-	padding-bottom: 30px;
 	border-top: solid black 4px;
 	border-bottom: solid black 4px;
 	position: relative;
@@ -371,15 +373,14 @@ nav a:hover {
 
 
   .price p {
-	padding-left: 0;
+	padding: 0;
   }
 
   .pricesection {
 	display: flex;
 	align-items: center;
 	justify-content: center; 
-	padding-left: 11.37vh;
-	padding-right: 11.37vh;
+
   }
 
   .pricesection1, .pricesection2, .pricesection3 {
@@ -402,7 +403,7 @@ nav a:hover {
   }
   
   .slide {
-	height: 80vh;
+	height: 550px;
 	border-radius: 8px;
 	margin: 10px; 
 	cursor: pointer;
@@ -442,11 +443,12 @@ nav a:hover {
   
   footer {
 	width: 100%;
-	height: 100px;
+	height: 60px;
 	background-color: #ba8b6b;
 	text-align: center;
 	padding-left: 70px;
 	margin-top: 10px;
+
   }
 
   footer span {
@@ -456,8 +458,9 @@ nav a:hover {
   }
   
   h4 {
-	padding: 30px 10px;
-	font-size: 30px;
+	padding: 0 8px;
+	padding-top: 10px;
+	font-size: 24px;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	display: inline-block;
@@ -480,29 +483,112 @@ nav a:hover {
 	display: inline-block;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*992-1200px */
 @media screen  and (max-width: 1200px) {
-    .box {
-        width: 970px;
-    }
+	.name {
+		padding-top: 30px;
+	}
+
 }
 
 /* 768-992px */
 @media screen  and (max-width: 992px) {
-    .box {
-        width: 720px;
-    }
+
     
     .linkNone {
       display: none;
     }
-  .price {
-        font-size:20px;
-  }
+
+
   span {
     font-size:30px;
   }
+  
+  .free{
+	  display: inline;
+  }
+  .free1 {
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+  }
+  .free2 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
+  h5 {
+	  padding: 30px;
+	  margin: 0;
+  }
+  .imgpresent {
+	  display: none;
+  }
+  #priceLesson {
+	display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 576-768px */
 @media screen  and (max-width: 768px) {
@@ -520,31 +606,22 @@ nav a:hover {
 		line-height: 1.5em;
 		font-size: 14px;
 		padding-left: 3vw;
+		text-align: center;
 	
 	  }
    .price {
         font-size:15px;
-		display: none;
+		/* display: none; */
   }
-  .pricesection {
+  /* .pricesection {
 	display: flex;
-	align-items: center;
-	justify-content: center; 
-	padding-left: 3vh;
-	padding-right: 3vh;
-	padding-bottom: none;
-	margin-bottom: none;
-	display: none;
-  }
+	padding-left: 30px;
+	padding-right: 30px;
+  } */
 
-  .pricesection1, .pricesection2, .pricesection3 {
-	  padding: 5px 20px;
-	  margin-bottom: none;
-	  display: none;
-  }
     span {
     font-size:25px;
-	display: none;
+	/* display: none; */
   }
 
   .photoline {
@@ -556,20 +633,20 @@ nav a:hover {
   }
 
   .slidephoto {
-	height: 20vh;
+	height: 400px;
 	padding: none;
 	margin: none;
   }
 
   .container {
-	margin-top: 30px;
+	margin-top: 5px;
 	width: 100%;
 	display: flex;
 	padding: 0 10px;
 	
   }
   .slide {
-	height: 20vh;
+	height: 400px;
 	padding: none;
 	margin: none;
   }
@@ -584,6 +661,9 @@ nav a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
   }
   
+  .photoDiv {
+	  display: none;
+  }
   .photo {
 	display: none;
   }
@@ -608,14 +688,14 @@ nav a:hover {
   
   h2 {
 	  font-size: 20px;
-	  padding-left: 3vw;
+	  padding-left: 30px;
 	  padding-top: 20px;
 	  padding-bottom: 20px;
 	  margin: 0;
   }
   p,h5 {
 	  font-size: 14px;
-	  padding-left: 3vw;
+	  /* padding-left: 3vw; */
 	  padding-top: 8px;
 	  padding-bottom: 8px;
 	  margin: 0;
@@ -639,13 +719,13 @@ nav a:hover {
 	justify-content: space-between;
 	position: relative;
 	border-top: solid black 4px;
-	display: none;
+	/* display: none; */
   }
 
   .free2 {
 	width: 100%;
-	padding-bottom: 30px;
-	display: none;
+	/* padding-bottom: 30px; */
+	/* display: none; */
   }
 
   .imgpresent {
@@ -658,7 +738,7 @@ nav a:hover {
 	  display: none;
   }
   .firstrecord {
-	  display: none;
+	  /* display: none; */
   }
   h3 {
 	  font-size: 10px;
@@ -667,9 +747,7 @@ nav a:hover {
 
 /* 0-576px */
 @media screen  and (max-width: 576px) {
-    .box {
-        width: 90%;
-    }
+
   .linkNoneToo {
     display: none;
   }
