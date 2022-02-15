@@ -527,7 +527,9 @@ nav a:hover {
 
 /* 768-992px */
 @media screen  and (max-width: 992px) {
-
+  .name {
+	padding-right: 30px;
+  }
     
     .linkNone {
       display: none;
@@ -561,7 +563,10 @@ nav a:hover {
   #priceLesson {
 	display: none;
 	}
+  footer {
 
+	padding-left: none;
+  }
 }
 
 
@@ -613,11 +618,10 @@ nav a:hover {
         font-size:15px;
 		/* display: none; */
   }
-  /* .pricesection {
-	display: flex;
+   .pricesection {
 	padding-left: 30px;
 	padding-right: 30px;
-  } */
+  }
 
     span {
     font-size:25px;
