@@ -103,13 +103,13 @@
 
   p {
 	padding-top: 30px;
-    padding-left: 5.3vw;
+    padding-left: 70px;
   }
 
   h2{
 	padding-top: 70px;
 	font-size: 30px;
-  	padding-left: 5.3vw;
+  	padding-left: 70px;
   }
   
   header {
@@ -144,6 +144,9 @@ nav a:hover {
 	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
 
   }
   
@@ -219,7 +222,6 @@ nav a:hover {
 
   .motivation {
 	padding-left: 70px;
-	padding-top: 110px;
 	font-size: 40px;
 	color: white;
 	line-height: 1.3em;
@@ -233,13 +235,12 @@ nav a:hover {
   }
   
   .name {
-	padding-right: 70px;
 	font-size: 30px;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	float: right;
   }
-  
+
   /*Слайдер начало*/
   .photoline {
 	margin-top: 30px;
@@ -369,6 +370,14 @@ nav a:hover {
 	border-top: solid black 4px;
 	border-bottom: solid black 4px;
 	position: relative;
+	display: flex;
+	/* flex-flow: column; */
+	justify-content: space-around;
+  }
+
+  .tab {
+	  width: 100%;
+	  height: 30px;
   }
 
 
@@ -376,15 +385,9 @@ nav a:hover {
 	padding: 0;
   }
 
-  .pricesection {
-	display: flex;
-	align-items: center;
-	justify-content: center; 
-
-  }
 
   .pricesection1, .pricesection2, .pricesection3 {
-	  padding: 20px 80px;
+	  padding: 20px 0;
   }
 
   span {
@@ -519,17 +522,12 @@ nav a:hover {
 
 /*992-1200px */
 @media screen  and (max-width: 1200px) {
-	.name {
-		padding-top: 30px;
-	}
 
 }
 
 /* 768-992px */
 @media screen  and (max-width: 992px) {
-  .name {
-	padding-right: 30px;
-  }
+
     
     .linkNone {
       display: none;
@@ -563,10 +561,7 @@ nav a:hover {
   #priceLesson {
 	display: none;
 	}
-  footer {
 
-	padding-left: none;
-  }
 }
 
 
@@ -618,10 +613,11 @@ nav a:hover {
         font-size:15px;
 		/* display: none; */
   }
-   .pricesection {
+  /* .pricesection {
+	display: flex;
 	padding-left: 30px;
 	padding-right: 30px;
-  }
+  } */
 
     span {
     font-size:25px;
@@ -671,25 +667,7 @@ nav a:hover {
   .photo {
 	display: none;
   }
-  .motivation {
-	padding-top: 80px;
-	padding-bottom: 30px;
-	font-size: 20px;
-	color: white;
-	line-height: 1.3em;
-	padding-left: 3vw;
-  }
-  
-  .name {
-	/* padding-right: 5.3vw; */
-	padding-top: 60px;
-	padding-bottom: 30px;
-	font-size: 20px;
-	color: white;
-	font-family: "Dancing Script", cursive;
-	float: right;
-  }
-  
+
   h2 {
 	  font-size: 20px;
 	  padding-left: 30px;
