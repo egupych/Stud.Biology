@@ -137,6 +137,7 @@ nav a:hover {
 }
   
   .beforePhoto {
+	margin-top: 50px;
 	width: 60%;
 	height: auto;
 	background: rgb(2,0,36);
@@ -146,11 +147,12 @@ nav a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
 	display: flex;
 	flex-flow: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 
   }
   
   .photoDiv{
+	  margin-top: 50px;
 	  width: 40%;
   }
   .photo {
@@ -220,25 +222,23 @@ nav a:hover {
 	transition-delay: 0.3s;
   }
 
-  .motivation {
-	padding-left: 70px;
-	font-size: 40px;
-	color: white;
-	line-height: 1.3em;
-  }
   
   h1 {
 	padding-left: 70px;
+	padding-right: 70px;
 	color: white;
 	line-height: 1.5em;
-	font-size: 24px;
+	font-size: 30px;
   }
   
   .name {
-	font-size: 30px;
+	font-size: 50px;
 	color: white;
 	font-family: "Dancing Script", cursive;
-	float: right;
+	margin-left: auto;
+	padding-right: 70px;
+	padding-bottom: 0;
+	margin-bottom: 0;
   }
 
   /*Слайдер начало*/
@@ -247,6 +247,7 @@ nav a:hover {
 	width: 100%;
 	display: flex;
 	padding: 0 40px;
+
   }
   
   .slidephoto {
@@ -267,28 +268,32 @@ nav a:hover {
 
   /*Слайдер конец*/
 
+
   .steps {
-	padding: 60px 0 10px 0;
+	padding: 80px 0 10px 0;
 	display: flex;
 	align-items: center;
-	justify-content: center; 
+	justify-content: space-evenly;
+	flex-wrap: wrap;
   }
 
   .step img {
-	width: 80px;
+	width: 4.5vw;
     display: block;
     margin-left: auto;
     margin-right: auto
 }
 
 	.step p {
-		padding: 65px 61px 10px 61px;
+		padding: 3vw;
 	}
+
+
 
   .free{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 	position: relative;
 
   }
@@ -304,7 +309,7 @@ nav a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#41658e",GradientType=1);
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	position: relative;
 	border-top: solid black 4px;
   }
@@ -321,28 +326,6 @@ nav a:hover {
 	  left: -14%;
 	  top: -50px;
   }
-/* 
-  .firstrecord {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-  }
-  .contacts {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: 10px;
-	margin-top: 70px;
-	width: 30%;
-	height: auto;
-	background: rgb(2,0,36);
-	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-  } */
   
   h5 {
 	padding-left: 70px;
@@ -372,7 +355,7 @@ nav a:hover {
 	position: relative;
 	display: flex;
 	/* flex-flow: column; */
-	justify-content: space-around;
+	justify-content: space-evenly;
   }
 
   .tab {
@@ -522,45 +505,42 @@ nav a:hover {
 
 /*992-1200px */
 @media screen  and (max-width: 1200px) {
+	.free1, .price {
+		border: none;
+	  }
 
+	  .motivation {
+		  display: none;
+	  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 768-992px */
 @media screen  and (max-width: 992px) {
 
-    
-    .linkNone {
-      display: none;
-    }
-
-
-  span {
-    font-size:30px;
-  }
-  
-  .free{
-	  display: inline;
-  }
-  .free1 {
-	  width: 100%;
-	  margin: 0;
-	  padding: 0;
-  }
-  .free2 {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-  h5 {
-	  padding: 30px;
-	  margin: 0;
-  }
-  .imgpresent {
-	  display: none;
-  }
-  #priceLesson {
-	display: none;
-	}
 
 }
 
@@ -593,150 +573,10 @@ nav a:hover {
 /* 576-768px */
 @media screen  and (max-width: 768px) {
 	
-	header {
-		width: 100%;
-	}
-
-	.logo {
-		padding-left: 3vw;
-	}
-	h1 {
-		padding-top: 18px;
-		color: white;
-		line-height: 1.5em;
-		font-size: 14px;
-		padding-left: 3vw;
-		text-align: center;
-	
-	  }
-   .price {
-        font-size:15px;
-		/* display: none; */
-  }
-  /* .pricesection {
-	display: flex;
-	padding-left: 30px;
-	padding-right: 30px;
-  } */
-
-    span {
-    font-size:25px;
-	/* display: none; */
-  }
-
-  .photoline {
-	margin: 20 0 0 0px;
-	padding: 0;
-	width: 100%;
-	display: flex;
-	padding: 0 10px;
-  }
-
-  .slidephoto {
-	height: 400px;
-	padding: none;
-	margin: none;
-  }
-
-  .container {
-	margin-top: 5px;
-	width: 100%;
-	display: flex;
-	padding: 0 10px;
-	
-  }
-  .slide {
-	height: 400px;
-	padding: none;
-	margin: none;
-  }
-
-  .beforePhoto {
-	width: 100%;
-	height: auto;
-	background: rgb(2,0,36);
-	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
-  }
-  
-  .photoDiv {
-	  display: none;
-  }
-  .photo {
-	display: none;
-  }
-
-  h2 {
-	  font-size: 20px;
-	  padding-left: 30px;
-	  padding-top: 20px;
-	  padding-bottom: 20px;
-	  margin: 0;
-  }
-  p,h5 {
-	  font-size: 14px;
-	  /* padding-left: 3vw; */
-	  padding-top: 8px;
-	  padding-bottom: 8px;
-	  margin: 0;
-  }
-  .steps {
-	  display: none;
-  }
-  .link {
-	  font-size: 14px;
-  }
-  h6{
-	  font-size: 24px;
-  }
-  .free1 {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-top: 10px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
-	border-top: solid black 4px;
-	/* display: none; */
-  }
-
-  .free2 {
-	width: 100%;
-	/* padding-bottom: 30px; */
-	/* display: none; */
-  }
-
-  .imgpresent {
-	  height: 150px;
-	  width: 150px;
-	  margin-right: 5.3vw;
-	  position: absolute;
-	  left: -14%;
-	  top: -50px;
-	  display: none;
-  }
-  .firstrecord {
-	  /* display: none; */
-  }
-  h3 {
-	  font-size: 10px;
-  }
   }
 
 /* 0-576px */
 @media screen  and (max-width: 576px) {
 
-  .linkNoneToo {
-    display: none;
-  }
-   .price {
-        font-size:10px;
-  }
-    span {
-    font-size:20px;
-  }
+
   }
