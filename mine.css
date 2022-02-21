@@ -90,26 +90,30 @@
 	color: black;
   }
 
-  /* оставляет только то что водит в область */
+  /* оставляет только то что входит в область */
   html, body {
 	  width:100%; 
 	  overflow-x:hidden
 	} 
-  
+
+
   body {
 	font-family: "Nunito", sans-serif;
-	font-size: 20px;
+	font-size: 1.5vw;
   }
 
   p {
-	padding-top: 30px;
-    padding-left: 70px;
+    padding-left: 6vw;
+	padding-right: 6vw;
+	padding-bottom: 2vw;
   }
 
   h2{
-	padding-top: 70px;
-	font-size: 30px;
-  	padding-left: 70px;
+	padding-top: 5vw;
+	padding-bottom: 3vw;
+	font-size: 2vw;
+  	padding-left: 6vw;
+	padding-right: 6vw;
   }
   
   header {
@@ -118,26 +122,26 @@
   }
   
   nav {
-	font-size: 18px;
-	height: 50px;
+	font-size: 1.3vw;
+	height: 4vw;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
 	position: fixed;
 	display: flex;
 	align-items: center;
-	z-index: 1;
-	flex-wrap: wrap;
+	z-index: 3;
+	justify-content: space-between;
   }
 
 nav a:hover {
-	color: #bb7343;
-	transition: 0.7s;
-	transition-delay: 0.35s;
+	color: #ba8b6b;
+	transition: 0.3s;
+	transition-delay: 0.2s;
 
 }
   
   .beforePhoto {
-	margin-top: 50px;
+	margin-top: 4vw;
 	width: 60%;
 	height: auto;
 	background: rgb(2,0,36);
@@ -152,7 +156,7 @@ nav a:hover {
   }
   
   .photoDiv{
-	  margin-top: 50px;
+	  margin-top: 4vw;
 	  width: 40%;
   }
   .photo {
@@ -162,29 +166,22 @@ nav a:hover {
   }
   
   .logo {
-	padding-left: 5.3vw;
 	font-family: "Dancing Script", cursive;
-	font-size: 30px;
+	font-size: 2vw;
+	margin-left: 6vw;
   }
-  
-  /* .logo:hover {
-	padding-left: 70px;
-	font-family: "Dancing Script", cursive;
-	font-size: 78px;
-	color:green;
-  } */
+
   
   .links {
 	display: flex;
-	padding-right: 5.3vw;
-	margin-left: auto;
+	margin-right: 6vw;
   }
   
   .link {
 	margin-left: 3vw;
 	position: relative;
 	overflow: hidden;
-	padding: 5px 0;
+	padding: 0.5vw 0;
 	transition: 0.2s;
   }
 
@@ -198,7 +195,7 @@ nav a:hover {
 	top: 0;
 	left: -100%;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	background: linear-gradient(90deg, transparent, #ba8b6b);
   }
 
@@ -206,8 +203,8 @@ nav a:hover {
 	bottom: 0;
 	left: -100%;
 	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, rgba(27,104,129,1));
+	height: 1px;
+	background: linear-gradient(90deg, transparent, #ba8b6b);
   }
 
   .link:hover .linkt {
@@ -222,44 +219,45 @@ nav a:hover {
 	transition-delay: 0.3s;
   }
 
+
   
   h1 {
-	padding-left: 70px;
-	padding-right: 70px;
+	padding-left: 6vw;
+	padding-right: 6vw;
 	color: white;
 	line-height: 1.5em;
-	font-size: 30px;
+	font-size: 2.5vw;
   }
   
   .name {
-	font-size: 50px;
+	font-size: 5vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	margin-left: auto;
-	padding-right: 70px;
+	padding-right: 6vw;
 	padding-bottom: 0;
 	margin-bottom: 0;
   }
 
   /*Слайдер начало*/
   .photoline {
-	margin-top: 30px;
+	margin-top: 3vw;
 	width: 100%;
 	display: flex;
-	padding: 0 40px;
+	padding: 0 3vw;
 
   }
   
   .slidephoto {
-	height: 550px;
-	border-radius: 8px;
-	margin: 0 10px;
+	height: 40vw;
+	margin: 0 1vw;
 	color: #fff;
 	flex: 1;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
+	border-radius: 1vw;
   }
 
   /* .slidephoto.active {
@@ -270,39 +268,45 @@ nav a:hover {
 
 
   .steps {
-	padding: 80px 0 10px 0;
+	padding: 2vw 2vw 0 2vw ;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
   }
 
   .step img {
-	width: 4.5vw;
+	width: 5vw;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
+	.step {
+		width: 15vw;
+		display: block;
+		text-align: center;
+	}
+
 	.step p {
-		padding: 3vw;
+		padding: 2vw 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
-
+/* 
   .free{
 	display: flex;
 	align-items: center;
-
 	position: relative;
 
   }
   .free1 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 70px;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
 	width: 50%;
-	background: rgb(2,0,36);
+	background: rgb(255, 255, 255);
 	background: -moz-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
 	background: -webkit-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
 	background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(36,106,128,1) 0%, rgba(65,101,142,1) 100%);
@@ -311,7 +315,6 @@ nav a:hover {
 	align-items: center;
 	justify-content: space-evenly;
 	position: relative;
-	border-top: solid black 4px;
   }
 
   .free2 {
@@ -319,79 +322,98 @@ nav a:hover {
   }
 
   .imgpresent {
-	  height: 150px;
-	  width: 150px;
+	  width: 10vw;
 
 	  position: absolute;
 	  left: -14%;
-	  top: -50px;
+	  top: -2.1vw;
   }
-  
-  h5 {
-	padding-left: 70px;
-	line-height: 1.3em;
-	color: #ffffff;
-	font-size: 20px;
-  }
+   */
 
-  #priceLesson {
-	color: #ffffff;
-	padding: 0;
-	margin: 0;
-	font-size: 30px;
-  }
+  /* h5 {
+	padding-left: 6vw;
+	padding-right: 6vw;
+	line-height: 1.3em;
+	color: rgba(168,108,74,1);
+	font-size: 1.5vw;
+  } */
 
   .price {
 	width: 100%;
-	height: auto;
-	background: rgb(2,0,36);
-	background: rgb(2,0,36);
-	background: -moz-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
-	background: -webkit-linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
-	background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(168,108,74,1) 0%, rgba(168,108,74,1) 0%, rgba(186,139,107,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
-	border-top: solid black 4px;
-	border-bottom: solid black 4px;
 	position: relative;
 	display: flex;
-	/* flex-flow: column; */
 	justify-content: space-evenly;
+	align-items: center;
+	/* background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1); */
+	background-color: #fff;
   }
 
   .tab {
 	  width: 100%;
-	  height: 30px;
+	  height: 3vw;
   }
+
 
 
   .price p {
 	padding: 0;
+	color: #bb7343;
   }
 
 
-  .pricesection1, .pricesection2, .pricesection3 {
-	  padding: 20px 0;
+  .pricefree {
+	padding: 3vw 2vw;
+	border-radius: 1vw;
+	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
+	text-align: center;
+	padding: 4.5vw 2vw;
+	line-height: 1.5em;
+	border: #bb7343 solid 0.2vw;
+	position: relative;
+	z-index: 1;
+	font-size: 2vw;
+	color: #bb7343;
+  }
+
+
+   /* .imgfree{
+	   position: absolute;
+	   width: 7vw;
+	   left: 18vw;
+	   bottom: 0vw;
+	   transform: rotate(20deg); 
+	   z-index: 2;
+   } */
+
+
+  .price1, .price2, .price3 {
+	  padding: 2vw 2vw;
+	  border-radius: 1vw;
+	  box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
+	  border: #bb7343 solid 0.2vw;
   }
 
   span {
-	  font-size: 40px;
+	  font-size: 4vw;
+	  color: #bb7343;
   }
 
 
 
   /*Слайдер начало*/
   .container {
-	margin-top: 30px;
 	width: 100%;
 	display: flex;
-	padding: 0 40px;
-	
+	padding: 0 4vw;
   }
   
   .slide {
-	height: 550px;
-	border-radius: 8px;
-	margin: 10px; 
+	height: 40vw;
+	margin: 1vw; 
 	cursor: pointer;
 	color: #fff;
 	flex: 1;
@@ -400,13 +422,19 @@ nav a:hover {
 	background-repeat: no-repeat;
 	position: relative;
 	transition: all 500ms ease-in-out;
-	filter: grayscale(100%)
+	filter: grayscale(100%);
+	border-radius: 1vw;
   }
+
+  .slide:hover {
+	  filter: none;
+  }
+
   .slide h3 {
 	position: absolute;
-	font-size: 24px;
-	bottom: 20px;
-	left: 20px;
+	font-size: 2vw;
+	bottom: 3vw;
+	left: 3vw;
 	margin: 0;
 	opacity: 0;
   }
@@ -423,44 +451,28 @@ nav a:hover {
   
   h3 {
 	color: white;
+
   }
   /*Слайдер конец*/
 
   
   footer {
 	width: 100%;
-	height: 60px;
+	height: 5vw;
 	background-color: #ba8b6b;
+	display: flex;
 	text-align: center;
-	padding-left: 70px;
-	margin-top: 10px;
-
+	margin-top: 1vw;
+	justify-content: center;
   }
 
-  footer span {
-	font-family: "Nunito", sans-serif;
-	font-size: 30px;
-	color: #fff;
-  }
   
   h4 {
-	padding: 0 8px;
-	padding-top: 10px;
-	font-size: 24px;
+	padding: 0 1vw;
+	font-size: 2vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
-	display: inline-block;
-  }
-
-  .x{
-	font-size: 24px;
-	font-family: "Nunito", sans-serif;
-  }
-  
-  sup {
-	color: white;
-	font-family: "Dancing Script", cursive;
-	font-size: 18px;
+	align-self: center;
   }
 
   .egupych {
@@ -505,13 +517,7 @@ nav a:hover {
 
 /*992-1200px */
 @media screen  and (max-width: 1200px) {
-	.free1, .price {
-		border: none;
-	  }
 
-	  .motivation {
-		  display: none;
-	  }
 }
 
 
