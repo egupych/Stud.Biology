@@ -220,7 +220,6 @@ nav a:hover {
 	transition-delay: 0.3s;
   }
 
--->
   
   h1 {
 	padding-left: 6vw;
@@ -231,7 +230,7 @@ nav a:hover {
   }
   
   .name {
-	font-size: 5vw;
+	font-size: 4vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	margin-left: auto;
