@@ -141,7 +141,7 @@ nav a:hover {
 }
   
   .beforePhoto {
-	margin-top: 4vw;
+	margin-top: 3.2vw;
 	width: 60%;
 	height: auto;
 	background: rgb(2,0,36);
@@ -156,7 +156,7 @@ nav a:hover {
   }
   
   .photoDiv{
-	  margin-top: 4vw;
+	  margin-top: 3.2vw;
 	  width: 40%;
   }
   .photo {
@@ -191,13 +191,13 @@ nav a:hover {
 	display: block;
   }
 
-<!--
+
   .linkt {
 	top: 0;
 	left: -100%;
 	width: 100%;
 	height: 1px;
-	background: linear-gradient(90deg, transparent, #ba8b6b);
+	background: linear-gradient(90deg, transparent, #FFF);
   }
 
   .linkb {
@@ -205,7 +205,7 @@ nav a:hover {
 	left: -100%;
 	width: 100%;
 	height: 1px;
-	background: linear-gradient(90deg, transparent, #ba8b6b);
+	background: linear-gradient(90deg, transparent, #FFF);
   }
 
   .link:hover .linkt {
