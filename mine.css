@@ -122,7 +122,7 @@
   }
   
   nav {
-	font-size: 1.3vw;
+	font-size: 1.1vw;
 	height: 3.2vw;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
@@ -135,8 +135,8 @@
 
 nav a:hover {
 	color: #ba8b6b;
-	transition: 0.1s;
-	transition-delay: 0.1s;
+	transition: 0s;
+	transition-delay: 0s;
 
 }
   
