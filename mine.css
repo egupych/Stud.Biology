@@ -372,7 +372,6 @@ nav a:hover {
 	text-align: center;
 	padding: 4.5vw 2vw;
 	line-height: 1.5em;
-	border: #bb7343 solid 0.2vw;
 	position: relative;
 	z-index: 1;
 	font-size: 2vw;
@@ -394,7 +393,6 @@ nav a:hover {
 	  padding: 2vw 2vw;
 	  border-radius: 0.7vw;
 	  box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
-	  border: #bb7343 solid 0.2vw;
   }
 
   span {
@@ -460,7 +458,7 @@ nav a:hover {
   footer {
 	width: 100%;
 	height: 7vw;
-	background-color: #ba8b6b;
+	background: linear-gradient(100.18deg, #BA8B6B 0.95%, #A86B4C 82.17%);
 	display: flex;
 	text-align: center;
 	margin-top: 1vw;
