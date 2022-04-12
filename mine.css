@@ -257,7 +257,7 @@ nav a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	border-radius: 1vw;
+	border-radius: 0.7vw;
   }
 
   /* .slidephoto.active {
@@ -367,7 +367,7 @@ nav a:hover {
 
   .pricefree {
 	padding: 3vw 2vw;
-	border-radius: 1vw;
+	border-radius: 0.7vw;
 	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
 	text-align: center;
 	padding: 4.5vw 2vw;
@@ -392,7 +392,7 @@ nav a:hover {
 
   .price1, .price2, .price3 {
 	  padding: 2vw 2vw;
-	  border-radius: 1vw;
+	  border-radius: 0.7vw;
 	  box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
 	  border: #bb7343 solid 0.2vw;
   }
@@ -423,7 +423,7 @@ nav a:hover {
 	position: relative;
 	transition: all 500ms ease-in-out;
 	filter: grayscale(100%);
-	border-radius: 1vw;
+	border-radius: 0.7vw;
   }
 
   .slide:hover {
