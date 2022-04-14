@@ -412,14 +412,13 @@ nav a:hover {
   .slide {
 	height: 40vw;
 	margin: 1vw; 
-	cursor: pointer;
 	color: #fff;
 	flex: 1;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	transition: all 2000ms ease-out;;
+	transition: all 1800ms ease-out;
 	filter: grayscale(100%);
 	border-radius: 0.7vw;
   }
