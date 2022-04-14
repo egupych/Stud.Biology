@@ -132,13 +132,6 @@
 	z-index: 3;
 	justify-content: space-between;
   }
-
-nav a:hover {
-	color: #ba8b6b;
-	transition: 0s;
-	transition-delay: 0s;
-
-}
   
   .beforePhoto {
 	margin-top: 3.2vw;
@@ -191,34 +184,21 @@ nav a:hover {
 	display: block;
   }
 
+.link:after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: all 0.32s ease-out;
+}
 
-  .linkt {
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 1px;
-	background: linear-gradient(90deg, transparent, #FFF);
-  }
-
-  .linkb {
-	bottom: 0;
-	left: -100%;
-	width: 100%;
-	height: 1px;
-	background: linear-gradient(90deg, transparent, #FFF);
-  }
-
-  .link:hover .linkt {
-	left: 100%;
-	transition: 0.7s;
-	transition-delay: 0.1s;
-  }
-
-  .link:hover .linkb {
-	left: 100%;
-	transition: 0.7s;
-	transition-delay: 0.3s;
-  }
+.link:hover:after {
+  left: 0;
+  width: 100%;
+}
 
   
   h1 {
