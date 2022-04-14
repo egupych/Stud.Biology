@@ -419,7 +419,7 @@ nav a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	transition: all 500ms ease-in-out;
+	transition: all 1500ms ease-out;;
 	filter: grayscale(100%);
 	border-radius: 0.7vw;
   }
