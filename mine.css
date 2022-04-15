@@ -122,7 +122,7 @@
   }
   
   nav {
-	font-size: 1.1vw;
+	font-size: 1.3vw;
 	height: 3.2vw;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
@@ -160,7 +160,7 @@
   
   .logo {
 	font-family: "Dancing Script", cursive;
-	font-size: 2vw;
+	font-size: 2.2vw;
 	margin-left: 6vw;
   }
 
@@ -175,7 +175,6 @@
 	position: relative;
 	overflow: hidden;
 	padding: 0.5vw 0;
-	transition: 0.2s;
   }
 
 
@@ -190,7 +189,7 @@
   bottom: 4px;
   right: 0;
   width: 0%;
-  height: 2px;
+  height: 0.15vw;
   background: black;
   transition: all 0.32s ease-out;
 }
@@ -248,6 +247,7 @@
 
 
   .steps {
+	margin-top: 3vw;
 	padding: 2vw 2vw 0 2vw ;
 	display: flex;
 	align-items: center;
@@ -310,17 +310,6 @@
 	color: #bb7343;
   }
 
-
-   /* .imgfree{
-	   position: absolute;
-	   width: 7vw;
-	   left: 18vw;
-	   bottom: 0vw;
-	   transform: rotate(20deg); 
-	   z-index: 2;
-   } */
-
-
   .price1, .price2, .price3 {
 	  padding: 2vw 2vw;
 	  border-radius: 0.7vw;
@@ -342,7 +331,7 @@
   }
   
   .slide {
-	height: 40vw;
+	height: 35vw;
 	margin: 1vw; 
 	color: #fff;
 	flex: 1;
@@ -361,7 +350,7 @@
 
   .slide h3 {
 	position: absolute;
-	font-size: 2vw;
+	font-size: 2.2vw;
 	bottom: 3vw;
 	left: 3vw;
 	margin: 0;
@@ -392,35 +381,68 @@
 	background: linear-gradient(100.18deg, #BA8B6B 0.95%, #A86B4C 82.17%);
 	display: flex;
 	text-align: center;
-	margin-top: 1vw;
+	margin-top: 3vw;
 	justify-content: center;
   }
 
   
   h4 {
-	padding: 0 1vw;
+	padding: 0;
 	font-size: 2vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	align-self: center;
   }
 
-  .egupych {
-	font-family: 'Ubuntu', sans-serif;
-	color: white;
-	display: inline-block;
-  }
+
+  .heartco {
+	animation:heartbeat 1s linear infinite both;
+	height:10%;
+	text-align:center;
+	width:10%;
+	padding-top: 1.8vw;
+	}
+	
+	
+	
+	/* Heart Image */
+	
+	.heart svg {
+	max-width:25%;
+	}
+	
+	@keyframes heartbeat {
+		0% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
+		2.1% { transform:matrix3d(1.022,0,0,0,0,1.022,0,0,0,0,1,0,0,0,0,1); }
+		4.1% { transform:matrix3d(1.036,0,0,0,0,1.036,0,0,0,0,1,0,0,0,0,1); }
+		8.21% { transform:matrix3d(1.046,0,0,0,0,1.046,0,0,0,0,1,0,0,0,0,1); }
+		11.41% { transform:matrix3d(1.042,0,0,0,0,1.042,0,0,0,0,1,0,0,0,0,1); }
+		14.51% { transform:matrix3d(1.032,0,0,0,0,1.032,0,0,0,0,1,0,0,0,0,1); }
+		20.72% { transform:matrix3d(1.011,0,0,0,0,1.011,0,0,0,0,1,0,0,0,0,1); }
+		27.03% { transform:matrix3d(0.997,0,0,0,0,0.997,0,0,0,0,1,0,0,0,0,1); }
+		33.23% { transform:matrix3d(0.993,0,0,0,0,0.993,0,0,0,0,1,0,0,0,0,1); }
+		45.75% { transform:matrix3d(0.998,0,0,0,0,0.998,0,0,0,0,1,0,0,0,0,1); }
+		58.26% { transform:matrix3d(1.001,0,0,0,0,1.001,0,0,0,0,1,0,0,0,0,1); }
+		83.28% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
+		100% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
+	}
 
 
 
-
-
-
-
-
-
-
-
+	::-webkit-scrollbar {
+		width: 4px;
+	  }
+	  
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: 2px 2px 2px -2px rgba(34, 60, 80, 0.2) inset;
+		background-color: #f9f9fd;
+		border-radius: 2px;
+	  }
+	  
+	::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		background: linear-gradient(180deg, #00c6fb, #bb7343);
+	  }
 
 
 
