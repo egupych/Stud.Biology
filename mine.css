@@ -434,6 +434,7 @@
 
 	::-webkit-scrollbar {
 		width: 4px;
+		z-index: 5;
 	  }
 /* */
 	::-webkit-scrollbar:hover {
