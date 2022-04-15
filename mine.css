@@ -342,10 +342,12 @@
 	transition: all 1800ms ease-out;
 	filter: grayscale(100%);
 	border-radius: 0.7vw;
+	opacity: 0.8;
   }
 
   .slide:hover {
 	  filter: none;
+	  opacity: 1;
   }
 
   .slide h3 {
@@ -360,6 +362,7 @@
   .slide.active {
 	flex: 10;
 	filter: none;
+
   }
   
   .slide.active h3 {
