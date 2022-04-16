@@ -133,7 +133,7 @@ nav {
 	justify-content: space-between;
 }
 
-.beforePhoto {
+.offer {
 	margin-top: 2.2vw;
 	width: 60%;
 	height: auto;
@@ -456,6 +456,65 @@ display: none;
 /* 768-992px */
 @media screen  and (max-width: 992px) {
 
+nav {
+	font-size: 3vw;
+	height: 12vw;
+}
+
+.logo {
+	font-size: 7vw;
+}
+
+.linkOut {
+	display: none;
+}
+
+.photo {
+	display: none;
+}
+
+.photoDiv {
+	display: none;
+}
+
+.offer {
+	margin-top: 10vw;
+	height: 70vw;
+	width: 100%;
+}
+
+h1 {
+	font-size: 4vw;
+}
+
+.name {
+	font-size: 7vw;
+}
+
+h2{
+	font-size: 4vw;
+}
+
+p {
+	font-size: 3vw;
+	padding-top: 2vw;
+}
+
+.steps {
+	display: none;
+}
+
+.slide h3 {
+	font-size: 3vw;
+}
+
+h4 {
+	font-size: 4vw;
+}
+
+footer {
+	height: 10vw;
+}
 
 }
 
