@@ -97,44 +97,44 @@
 	} 
 
 
-  body {
+body {
 	font-family: "Nunito", sans-serif;
 	font-size: 1.5vw;
-  }
+}
 
-  p {
-    padding-left: 6vw;
+p {
+	padding-left: 6vw;
 	padding-right: 6vw;
 	padding-bottom: 2vw;
-  }
+}
 
-  h2{
+h2{
 	padding-top: 5vw;
 	padding-bottom: 3vw;
 	font-size: 2vw;
-  	padding-left: 6vw;
+	padding-left: 6vw;
 	padding-right: 6vw;
-  }
-  
-  header {
+}
+
+header {
 	display: flex;
-    justify-content: center; 
-  }
-  
-  nav {
-	font-size: 1.3vw;
+	justify-content: center; 
+}
+
+nav {
+	font-size: 1.2vw;
 	height: 3.2vw;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
 	position: fixed;
+	z-index: 3;
 	display: flex;
 	align-items: center;
-	z-index: 3;
 	justify-content: space-between;
-  }
-  
-  .beforePhoto {
-	margin-top: 3.2vw;
+}
+
+.beforePhoto {
+	margin-top: 2.2vw;
 	width: 60%;
 	height: auto;
 	background: rgb(2,0,36);
@@ -145,70 +145,67 @@
 	display: flex;
 	flex-flow: column;
 	justify-content: space-evenly;
-
-  }
+}
   
-  .photoDiv{
-	  margin-top: 3.2vw;
-	  width: 40%;
-  }
-  .photo {
+.photoDiv{
+	margin-top: 2.2vw;
+	width: 40%;
+}
+.photo {
 	width: 100%;
-	/* height: 718px; */
 	background-color: #bb7343;
-  }
-  
-  .logo {
-	font-family: "Dancing Script", cursive;
-	font-size: 2.2vw;
-	margin-left: 6vw;
-  }
+}
 
-  
-  .links {
+.logo {
+	font-family: "Dancing Script", cursive;
+	font-size: 2vw;
+	margin-left: 6vw;
+}
+
+
+.links {
 	display: flex;
 	margin-right: 6vw;
-  }
-  
-  .link {
+}
+
+.link {
 	margin-left: 3vw;
 	position: relative;
 	overflow: hidden;
 	padding: 0.5vw 0;
-  }
+}
 
 
-  .linkline {
+.linkline {
 	position: absolute;
 	display: block;
-  }
+}
 
 .link:after {
-  content: "";
-  position: absolute;
-  bottom: 4px;
-  right: 0;
-  width: 0%;
-  height: 0.15vw;
-  background: black;
-  transition: all 0.32s ease-out;
+	content: "";
+	position: absolute;
+	bottom: 0.15vw;
+	right: 0;
+	width: 0%;
+	height: 0.105vw;
+	background: rgb(56, 56, 56);
+	transition: all 0.32s ease-out;
 }
 
 .link:hover:after {
-  left: 0;
-  width: 100%;
+	left: 0;
+	width: 100%;
 }
 
-  
-  h1 {
+h1 {
 	padding-left: 6vw;
 	padding-right: 6vw;
 	color: white;
 	line-height: 1.5em;
 	font-size: 2.5vw;
-  }
-  
-  .name {
+}
+
+.name {
 	font-size: 4vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
@@ -216,90 +213,83 @@
 	padding-right: 6vw;
 	padding-bottom: 0;
 	margin-bottom: 0;
-  }
+}
 
-  /*Слайдер начало*/
-  .photoline {
+/*Слайдер начало*/
+.photoline {
 	margin-top: 3vw;
 	width: 100%;
 	display: flex;
-	padding: 0 3vw;
+	padding: 0 1vw;
+}
 
-  }
-  
-  .slidephoto {
+.slidephoto {
 	height: 40vw;
 	margin: 0 1vw;
-	color: #fff;
 	flex: 1;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	border-radius: 0.7vw;
-  }
-
-  /* .slidephoto.active {
-	flex: 10;
-  } */
-
-  /*Слайдер конец*/
+	border-radius: 1vw;
+}
+/*Слайдер конец*/
 
 
-  .steps {
-	margin-top: 3vw;
+.steps {
+	margin: 0vw 1vw;
 	padding: 2vw 2vw 0 2vw ;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  }
-
-  .step img {
-	width: 5vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-	.step {
-		width: 15vw;
-		display: block;
-		text-align: center;
-	}
+.step img {
+	width: 4vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	.step p {
-		padding: 2vw 0;
-		margin-left: auto;
-		margin-right: auto;
-	}
+.step {
+	width: 15vw;
+	display: block;
+	text-align: center;
+}
+
+.step p {
+	padding: 2vw 0;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
-  .price {
+.price {
 	width: 100%;
 	position: relative;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: #fff;
-  }
+}
 
-  .tab {
-	  width: 100%;
-	  height: 3vw;
-  }
+.tab {
+	width: 100%;
+	height: 3vw;
+}
 
 
 
-  .price p {
+.price p {
 	padding: 0;
 	color: #bb7343;
-  }
+}
 
 
-  .pricefree {
+.pricefree {
 	padding: 3vw 2vw;
-	border-radius: 0.7vw;
+	border-radius: 1vw;
 	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
 	text-align: center;
 	padding: 4.5vw 2vw;
@@ -308,29 +298,29 @@
 	z-index: 1;
 	font-size: 2vw;
 	color: #bb7343;
-  }
+}
 
-  .price1, .price2, .price3 {
-	  padding: 2vw 2vw;
-	  border-radius: 0.7vw;
-	  box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
-  }
+.price1, .price2, .price3 {
+	padding: 2vw 2vw;
+	border-radius: 1vw;
+	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
+}
 
-  span {
-	  font-size: 4vw;
-	  color: #bb7343;
-  }
+span {
+	font-size: 4vw;
+	color: #bb7343;
+}
 
 
 
-  /*Слайдер начало*/
-  .container {
+/*Слайдер начало*/
+.container {
 	width: 100%;
 	display: flex;
-	padding: 0 4vw;
-  }
-  
-  .slide {
+	padding: 0 1vw;
+}
+
+.slide {
 	height: 35vw;
 	margin: 1vw; 
 	color: #fff;
@@ -341,117 +331,74 @@
 	position: relative;
 	transition: all 1800ms ease-out;
 	filter: grayscale(100%);
-	border-radius: 0.7vw;
+	border-radius: 1vw;
 	opacity: 0.8;
-  }
+}
 
-  .slide:hover {
-	  filter: none;
-	  opacity: 1;
-  }
+.slide:hover {
+	filter: none;
+}
 
-  .slide h3 {
+.slide h3 {
 	position: absolute;
 	font-size: 2.2vw;
-	bottom: 3vw;
+	bottom: 2vw;
 	left: 3vw;
 	margin: 0;
 	opacity: 0;
-  }
+}
   
-  .slide.active {
+.slide.active {
 	flex: 10;
 	filter: none;
+	opacity: 1;
+}
 
-  }
-  
-  .slide.active h3 {
+.slide.active h3 {
 	opacity: 1;
 	transition: opacity 0.5s ease-in 0.4s;
-  }
-  
-  h3 {
+}
+
+h3 {
 	color: white;
 	text-shadow: 0px 0px 10px gray;
+}
+/*Слайдер конец*/
 
-  }
-  /*Слайдер конец*/
 
-  
-  footer {
+footer {
 	width: 100%;
 	height: 7vw;
 	background: linear-gradient(100.18deg, #BA8B6B 0.95%, #A86B4C 82.17%);
 	display: flex;
 	text-align: center;
-	margin-top: 3vw;
+	margin-top: 1.2vw;
 	justify-content: center;
-  }
+}
 
-  
-  h4 {
+
+h4 {
 	padding: 0;
 	font-size: 2vw;
 	color: white;
 	font-family: "Dancing Script", cursive;
 	align-self: center;
-  }
+}
 
 
-  .heartco {
-	animation:heartbeat 1s linear infinite both;
-	height:10%;
-	text-align:center;
-	width:10%;
-	padding-top: 1.8vw;
+::-webkit-scrollbar {
+	width: 4px;
 	}
 	
-	
-	
-	/* Heart Image */
-	
-	.heart svg {
-	max-width:25%;
+::-webkit-scrollbar-track {
+	background-color: #ffffff00;
+	border-radius: 2px;
 	}
 	
-	@keyframes heartbeat {
-		0% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
-		2.1% { transform:matrix3d(1.022,0,0,0,0,1.022,0,0,0,0,1,0,0,0,0,1); }
-		4.1% { transform:matrix3d(1.036,0,0,0,0,1.036,0,0,0,0,1,0,0,0,0,1); }
-		8.21% { transform:matrix3d(1.046,0,0,0,0,1.046,0,0,0,0,1,0,0,0,0,1); }
-		11.41% { transform:matrix3d(1.042,0,0,0,0,1.042,0,0,0,0,1,0,0,0,0,1); }
-		14.51% { transform:matrix3d(1.032,0,0,0,0,1.032,0,0,0,0,1,0,0,0,0,1); }
-		20.72% { transform:matrix3d(1.011,0,0,0,0,1.011,0,0,0,0,1,0,0,0,0,1); }
-		27.03% { transform:matrix3d(0.997,0,0,0,0,0.997,0,0,0,0,1,0,0,0,0,1); }
-		33.23% { transform:matrix3d(0.993,0,0,0,0,0.993,0,0,0,0,1,0,0,0,0,1); }
-		45.75% { transform:matrix3d(0.998,0,0,0,0,0.998,0,0,0,0,1,0,0,0,0,1); }
-		58.26% { transform:matrix3d(1.001,0,0,0,0,1.001,0,0,0,0,1,0,0,0,0,1); }
-		83.28% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
-		100% { transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); }
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: linear-gradient(180deg, #00c6fb, #bb7343);
 	}
-
-
-
-	::-webkit-scrollbar {
-		width: 4px;
-		z-index: 5;
-	  }
-/* */
-	::-webkit-scrollbar:hover {
-		width: 10px;
-	  }
-	  
-	::-webkit-scrollbar-track {
-		-webkit-box-shadow: 2px 2px 2px -2px rgba(34, 60, 80, 0.2) inset;
-		background-color: #f9f9fd;
-		border-radius: 2px;
-	  }
-	  
-	::-webkit-scrollbar-thumb {
-		border-radius: 2px;
-		background: linear-gradient(180deg, #00c6fb, #bb7343);
-	  }
-
 
 
 
@@ -477,9 +424,9 @@
 
 /*992-1200px */
 @media screen  and (max-width: 1200px) {
-	.linkNone{
-	display: none;
-	}
+.linkNone{
+display: none;
+}
 }
 
 
