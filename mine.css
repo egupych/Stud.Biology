@@ -88,6 +88,7 @@
   
   * {
 	color: black;
+	cursor: none;
   }
 
   /* оставляет только то что входит в область */
@@ -400,64 +401,66 @@ h4 {
 	background: linear-gradient(180deg, #00c6fb, #bb7343);
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*992-1200px */
-@media screen  and (max-width: 1200px) {
-.linkNone{
-display: none;
-}
+.cursor1 {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #bb73438c;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	z-index: 100;
+	transition: 100ms;
 }
 
+.cursor2 {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #bb73438c;
+	transition: 110ms;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	z-index: 100;
+}
+
+.cursor3 {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #bb734325;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	z-index: 99;
+	transition: 200ms;
+}
+
+.cursor4 {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #bb734325;
+	transition: 210ms;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	z-index: 99;
+}
+
+
+.links a:hover ~ .cursor{
+	transform: scale(3)
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 768-992px */
-@media screen  and (max-width: 992px) {
+/* 576px */
+@media screen  and (max-width: 576px) {
 
 nav {
-	font-size: 3vw;
+	font-size: 4vw;
 	height: 12vw;
 }
 
@@ -481,10 +484,15 @@ nav {
 	margin-top: 10vw;
 	height: 70vw;
 	width: 100%;
+	text-align: center
+}
+
+.offer p {
+	display: none;
 }
 
 h1 {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 .name {
@@ -492,65 +500,34 @@ h1 {
 }
 
 h2{
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 p {
-	font-size: 3vw;
-	padding-top: 2vw;
+	font-size: 4vw;
+	padding-top: 4vw;
 }
 
 .steps {
 	display: none;
 }
 
+.price {
+	flex-wrap: wrap;
+}
+
 .slide h3 {
-	font-size: 3vw;
+	font-size: 4vw;
 }
 
 h4 {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 footer {
 	height: 10vw;
 }
 
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 576-768px */
-@media screen  and (max-width: 768px) {
-	
-  }
-
-/* 0-576px */
-@media screen  and (max-width: 576px) {
-
-
-  }
