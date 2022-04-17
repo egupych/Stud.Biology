@@ -537,8 +537,22 @@ footer {
 	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgb(24, 24, 24) 0%, rgb(56, 48, 48) 81%);
 }
 
-.cursor1 .cursor2 .cursor3 .cursor4 {
+.cursor1{
 	display: none;
 }
+.cursor2{
+	display: none;
+}
+.cursor3{
+	display: none;
+}
+.cursor4{
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background: rgb(56, 48, 48) 81%;
+	}
 
 }
