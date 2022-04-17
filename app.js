@@ -14,6 +14,54 @@ function clearActiveClasses() {
   });
 }
 
+function setScrollIntoView1(top) {
+	const me = document.querySelector('.me');
+	me.scrollIntoView(top);
+}
+
+function setScrollIntoView1Options(top) {
+	const me = document.querySelector('.me');
+	me.scrollIntoView({
+		//"start", "center", "end" или "nearest". По умолчанию "center".
+		block: "start",
+		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
+function setScrollIntoView2(top) {
+	const lesson = document.querySelector('.lesson');
+	lesson.scrollIntoView(top);
+}
+
+function setScrollIntoView2Options(top) {
+	const lesson = document.querySelector('.lesson');
+	lesson.scrollIntoView({
+		//"start", "center", "end" или "nearest". По умолчанию "center".
+		block: "start",
+		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
+function setScrollIntoView3(top) {
+	const boxprice = document.querySelector('.boxprice');
+	boxprice.scrollIntoView(top);
+}
+
+function setScrollIntoView3Options(top) {
+	const boxprice = document.querySelector('.boxprice');
+	boxprice.scrollIntoView({
+		//"start", "center", "end" или "nearest". По умолчанию "center".
+		block: "start",
+		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
 
 const cursor1 = document.querySelector(".cursor1");
 document.addEventListener("mousemove", (e) => {
@@ -39,9 +87,6 @@ document.addEventListener("mousemove", (e) => {
   cursor4.style.top= e.pageY+"px";
 })
 
-if (window.matchMedia("(max-width: 576px)").matches) {
-  document.getElementById("logo").innerHTML = "Svetlana Podergina";
-} 
 
 
   
