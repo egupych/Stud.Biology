@@ -461,14 +461,10 @@ h4 {
 /* 576px */
 @media screen  and (max-width: 576px) {
 
-nav {
-	font-size: 4vw;
-	height: 12vw;
-}
 
-.logo {
+/* .logo {
 	font-size: 7vw;
-}
+} */
 
 .linkOut {
 	display: none;
@@ -483,24 +479,24 @@ nav {
 }
 
 .offer {
-	margin-top: 10vw;
+	/* margin-top: 10vw; */
 	height: 70vw;
 	width: 100%;
-	text-align: center;
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgb(24, 24, 24) 0%, rgb(56, 48, 48) 81%);
+	/* text-align: center;
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgb(24, 24, 24) 0%, rgb(56, 48, 48) 81%); */
 }
-
+/* 
 .offer p {
 	display: none;
-}
-
+} */
+/* 
 h1 {
 	font-size: 6vw;
 }
 
 .name {
 	font-size: 7vw;
-}
+} */
 
 h2{
 	padding-top: 10vw;
