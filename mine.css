@@ -492,7 +492,7 @@ nav {
 }
 
 h1 {
-	font-size: 5vw;
+	font-size: 6vw;
 }
 
 .name {
@@ -500,6 +500,7 @@ h1 {
 }
 
 h2{
+	padding-top: 10vw;
 	font-size: 5vw;
 }
 
@@ -525,7 +526,7 @@ h4 {
 }
 
 footer {
-	height: 10vw;
+	height: 20vw;
 }
 
 
