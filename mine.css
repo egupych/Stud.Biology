@@ -1,554 +1,160 @@
-/*Обнуление*/
-* {
-	padding: 0;
-	margin: 0;
-	border: 0;
-  }
-  *,
-  *:before,
-  *:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-  }
-  :focus,
-  :active {
-	outline: none;
-  }
-  a:focus,
-  a:active {
-	outline: none;
-  }
-  
-  nav,
-  footer,
-  header,
-  aside {
-	display: block;
-  }
-  
-  html,
-  body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-  }
-  input,
-  button,
-  textarea {
-	font-family: inherit;
-  }
-  
-  input::-ms-clear {
-	display: none;
-  }
-  button {
-	cursor: pointer;
-  }
-  button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
-  }
-  a,
-  a:visited {
-	text-decoration: none;
-  }
-  a:hover {
-	text-decoration: none;
-  }
-  ul li {
-	list-style: none;
-  }
-  img {
-	vertical-align: top;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-	font-size: inherit;
-	font-weight: 400;
-  }
-  /*--------------------*/
-  
-  .bigred {
-	font-size: 20px;
-	color: red;
-  }
-  
-  /*Обнуление*/
-  
-  * {
-	color: black;
-	cursor: none;
-  }
-
-  /* оставляет только то что входит в область */
-  html, body {
-	  width:100%; 
-	  overflow-x:hidden
-	} 
-
-
-body {
-	font-family: "Nunito", sans-serif;
-	font-size: 1.5vw;
-}
-
-p {
-	padding-left: 6vw;
-	padding-right: 6vw;
-	padding-bottom: 2vw;
-}
-
-h2{
-	padding-top: 5vw;
-	padding-bottom: 3vw;
-	font-size: 2vw;
-	padding-left: 6vw;
-	padding-right: 6vw;
-}
-
-header {
-	display: flex;
-	justify-content: center; 
-}
-
-nav {
-	font-size: 1.2vw;
-	height: 3.2vw;
-	background-color: rgb(255, 255, 255);
-	width: 100%;
-	position: fixed;
-	z-index: 3;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.offer {
-	margin-top: 2.2vw;
-	width: 60%;
-	height: auto;
-	background: rgb(2,0,36);
-	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
-	display: flex;
-	flex-flow: column;
-	justify-content: space-evenly;
-}
-  
-.photoDiv{
-	margin-top: 2.2vw;
-	width: 40%;
-}
-.photo {
-	width: 100%;
-	background-color: #bb7343;
-}
-
-.logo {
-	font-family: "Dancing Script", cursive;
-	font-size: 2vw;
-	margin-left: 6vw;
-}
-
-
-.links {
-	display: flex;
-	margin-right: 6vw;
-}
-
-.link {
-	margin-left: 3vw;
-	position: relative;
-	overflow: hidden;
-	padding: 0.5vw 0;
-}
-
-
-.linkline {
-	position: absolute;
-	display: block;
-}
-
-.link:after {
-	content: "";
-	position: absolute;
-	bottom: 0.15vw;
-	right: 0;
-	width: 0%;
-	height: 0.105vw;
-	background: rgb(56, 56, 56);
-	transition: all 0.32s ease-out;
-}
-
-.link:hover:after {
-	left: 0;
-	width: 100%;
-}
-
-h1 {
-	padding-left: 6vw;
-	padding-right: 6vw;
-	color: white;
-	line-height: 1.5em;
-	font-size: 2.5vw;
-}
-
-.name {
-	font-size: 4vw;
-	color: white;
-	font-family: "Dancing Script", cursive;
-	margin-left: auto;
-	padding-right: 6vw;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-/*Слайдер начало*/
-.photoline {
-	margin-top: 3vw;
-	width: 100%;
-	display: flex;
-	padding: 0 1vw;
-}
-
-.slidephoto {
-	height: 40vw;
-	margin: 0 1vw;
-	flex: 1;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	border-radius: 1vw;
-}
-/*Слайдер конец*/
-
-
-.steps {
-	margin: 0vw 1vw;
-	padding: 2vw 2vw 0 2vw ;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.step img {
-	width: 4vw;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.step {
-	width: 15vw;
-	display: block;
-	text-align: center;
-}
-
-.step p {
-	padding: 2vw 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-.price {
-	width: 100%;
-	position: relative;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: #fff;
-
-	
-}
-
-.tab {
-	width: 100%;
-	height: 3vw;
-}
-
-
-
-.price p {
-	padding: 0;
-	color: #bb7343;
-}
-
-
-.pricefree {
-	padding: 3vw 2vw;
-	border-radius: 1vw;
-	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
-	text-align: center;
-	padding: 4.5vw 2vw;
-	line-height: 1.5em;
-	position: relative;
-	z-index: 1;
-	font-size: 2vw;
-	color: #bb7343;
-}
-
-.price1, .price2, .price3 {
-	padding: 2vw 2vw;
-	border-radius: 1vw;
-	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
-}
-
-span {
-	font-size: 4vw;
-	color: #bb7343;
-}
-
-
-
-/*Слайдер начало*/
-.container {
-	width: 100%;
-	display: flex;
-	padding: 0 1vw;
-}
-
-.slide {
-	height: 35vw;
-	margin: 1vw; 
-	color: #fff;
-	flex: 1;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	transition: all 1800ms ease-out;
-	filter: grayscale(100%);
-	border-radius: 1vw;
-	opacity: 0.8;
-}
-
-.slide:hover {
-	filter: none;
-}
-
-.slide h3 {
-	position: absolute;
-	font-size: 2.2vw;
-	bottom: 2vw;
-	left: 3vw;
-	margin: 0;
-	opacity: 0;
-}
-  
-.slide.active {
-	flex: 10;
-	filter: none;
-	opacity: 1;
-}
-
-.slide.active h3 {
-	opacity: 1;
-	transition: opacity 0.5s ease-in 0.4s;
-}
-
-h3 {
-	color: white;
-	text-shadow: 0px 0px 10px gray;
-}
-/*Слайдер конец*/
-
-
-footer {
-	width: 100%;
-	height: 7vw;
-	background: linear-gradient(100.18deg, #BA8B6B 0.95%, #A86B4C 82.17%);
-	display: flex;
-	text-align: center;
-	margin-top: 1.2vw;
-	justify-content: center;
-}
-
-
-h4 {
-	padding: 0;
-	font-size: 2vw;
-	color: white;
-	font-family: "Dancing Script", cursive;
-	align-self: center;
-}
-
-
-::-webkit-scrollbar {
-	width: 4px;
-	}
-	
-::-webkit-scrollbar-track {
-	background-color: #ffffff00;
-	border-radius: 2px;
-	}
-	
-::-webkit-scrollbar-thumb {
-	border-radius: 2px;
-	background: linear-gradient(180deg, #00c6fb, #bb7343);
-	}
-
-.cursor1 {
-	position: fixed;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #bb73438c;
-	transform: translate(-50%,-50%);
-	pointer-events: none;
-	z-index: 100;
-	transition: 100ms;
-}
-
-.cursor2 {
-	position: fixed;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #bb73438c;
-	transition: 110ms;
-	transform: translate(-50%,-50%);
-	pointer-events: none;
-	z-index: 100;
-}
-
-.cursor3 {
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: #bb734325;
-	transform: translate(-50%,-50%);
-	pointer-events: none;
-	z-index: 99;
-	transition: 200ms;
-}
-
-.cursor4 {
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: #bb734325;
-	transition: 210ms;
-	transform: translate(-50%,-50%);
-	pointer-events: none;
-	z-index: 99;
-}
-
-
-.links a:hover ~ .cursor{
-	transform: scale(3)
-}
-
-
-
-/* 576px */
-@media screen  and (max-width: 576px) {
-
-
-/* .logo {
-	font-size: 7vw;
-} */
-
-.linkOut {
-	display: none;
-}
-
-.photo {
-	display: none;
-}
-
-.photoDiv {
-	display: none;
-}
-
-.offer {
-	/* margin-top: 10vw; */
-	height: 70vw;
-	width: 100%;
-	/* text-align: center;
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgb(24, 24, 24) 0%, rgb(56, 48, 48) 81%); */
-}
-/* 
-.offer p {
-	display: none;
-} */
-/* 
-h1 {
-	font-size: 6vw;
-}
-
-.name {
-	font-size: 7vw;
-} */
-
-h2{
-	padding-top: 10vw;
-	font-size: 5vw;
-}
-
-p {
-	font-size: 4vw;
-	padding-top: 4vw;
-}
-
-.steps {
-	display: none;
-}
-
-.price p{
-	color: black;
-}
-
-.price p{
-	color: black;
-}
-
-.slide h3 {
-	font-size: 4vw;
-}
-
-h4 {
-	font-size: 5vw;
-}
-
-footer {
-	height: 20vw;
-	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgb(24, 24, 24) 0%, rgb(56, 48, 48) 81%);
-}
-
-.cursor1{
-	display: none;
-}
-.cursor2{
-	display: none;
-}
-.cursor3{
-	display: none;
-}
-.cursor4{
-	display: none;
-}
-
-::-webkit-scrollbar-thumb {
-	border-radius: 0px;
-	background: rgb(56, 48, 48) 81%;
-	}
-
-}
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <title>Stud.Biology</title>
+  <link rel="stylesheet" href="mine.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+  </style>
+  <link rel="shortcut icon" href="eco.png" type="image/png" />
+</head>
+
+
+<body>
+  <nav>
+    <div class="logo" id="logo">
+      <h6>Stud.Biology</h6>
+    </div>
+    <div class="links">
+      <a class="link linkOut" href="#me">Обо мне</a>
+      <a class="link linkOut" href="#lesson">О занятиях</a>
+      <a class="link linkOut" href="#price">Стоимость</a>
+      <a class="link linkOut" href="https://vk.com/s.podergina" target="_blank">VK</a>
+      <a class="link" href="tel:+79655752837">8-965-575-28-37</a>
+      <div class="cursor1"></div>
+      <div class="cursor2"></div>
+      <div class="cursor3"></div>
+      <div class="cursor4"></div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="offer">
+      <h1>Онлайн занятия по биологии, <br> с личным преподавателем,<br>
+        который объяснит <br> и сделает обучение интереснее</h1>
+      <p class="name">Svetlana Podergina</p>
+    </div>
+    <div class="photoDiv">
+      <img class="photo" src="sveta.jpg" alt="Фото Светланы Подергиной">
+    </div>
+  </header>
+
+  <section class="biography">
+    <h2 id="me">Обо мне</h2>
+    <p>Студентка 4 курса УрФУ имени первого Президента России Б.Н. Ельцина;</p>
+    <p>2 года стажа в преподавательской деятельности по направлению — Биология.</p>
+  </section>
+
+  <div class="photoline">
+    <div class="slidephoto" style="background-image: url('https://github.com/Egupych/photoSvet/blob/main/svet1.jpg?raw=true');"></div>
+    <div class="slidephoto" style="background-image: url('https://github.com/Egupych/photoSvet/blob/main/svet2.png?raw=true');"></div>
+    <div class="slidephoto" style="background-image: url('https://github.com/Egupych/photoSvet/blob/main/svet3.jpg?raw=true');"></div>
+  </div>
+
+  <section class="plan">
+    <h2 id="lesson">О занятиях</h2>
+    <p>Занятия проходят в он-лайн формате на платформах: Skype, Discord, Zoom, Telegram;</p>
+    <p>Домашние задания выдаются с учётом требований ОГЭ, ЕГЭ, в т.ч. тестовые задания с учётом пройденных тем;</p>
+    <p>Занятия могут быть как систематическими, так и разовыми для разбора нужных тем;</p>
+    <p>Вы выбираете тему и удобное время занятия;</p>
+    <p>Занятие проходит с использованием презентации, электронной доски и вэб-камеры на стороне преподавателя.</p>
+    <section class="steps">
+      <div class="step">
+        <a href="tel:+79655752837"><img src="planning.png" alt="Запись на занятие"></a>
+        <p>Запись <br> на занятие<br></p>
+      </div>
+      <div class="step">
+        <img src="exam.png" alt="Проверка домашнего задания">
+        <p>Проверка <br> домашнего <br> задания</p>
+      </div>
+      <div class="step">
+        <img src="discuss.png" alt="Разбор новой темы">
+        <p>Разбор <br> новой темы<br></p>
+      </div>
+      <div class="step">
+        <img src="qa.png" alt="Закрепление материала">
+        <p>Закрепление <br> материала<br></p>
+      </div>
+      <div class="step">
+        <img src="task.png" alt="Выдача домашнего задания">
+        <p>Выдача <br> домашнего <br> задания</p>
+      </div>
+    </section>
+  </section>
+
+  <h2 id="price">Стоимость</h2>
+  <section class="price">
+    <div class="boxprice">
+      <div class="pricefree">
+        <p>Первое занятие</p>
+        <p>бесплатно</p>
+      </div>
+    </div>
+    <div class="price1">
+      <p><span>1</span> час</p>
+      <div class="tab"></div>
+      <p><span>750</span> рублей</p>
+    </div>
+    <div class="price2">
+      <p><span>1.5</span> часа</p>
+      <div class="tab"></div>
+      <p><span>900</span> рублей</p>
+    </div>
+    <div class="price3">
+      <p><span>2</span> часа</p>
+      <div class="tab"></div>
+      <p><span>1100</span> рублей</p>
+    </div>
+  </section>
+
+  <section class="themes">
+    <h2>Темы с которых можно начать</h2>
+    <div class="container">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
+        <h3>Анатомия и физиология</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1578496479530-799fd6d0803a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1070&q=80');">
+        <h3>Генетика и селекция</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1535231540604-72e8fbaf8cdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80');">
+        <h3>Эволюция</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1615209853186-e4bd66602508?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');">
+        <h3>Экология</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1552084162-ec07b3f162dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
+        <h3>Общая биология</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1475906089153-644d9452ce87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');">
+        <h3>Ботаника</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1559253664-ca249d4608c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
+        <h3>Зоология</h3>
+      </div>
+    </div>
+  </section>
+
+
+<footer>
+  <h4>Stud.Biology</h4>
+  <h4>&ensp; ❤︎ &ensp;</h4>
+  <h4>S.Podergina</h4>
+</footer>
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
