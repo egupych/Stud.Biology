@@ -254,6 +254,20 @@ h1 {
 	text-align: center;
 }
 
+.arrow {
+	/* width: 15vw; */
+	display: block;
+	text-align: center;
+}
+
+.arrow img {
+	width: 2.2vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 .step p {
 	padding: 2vw  2vw 0 2vw ;
 	margin-left: auto;
@@ -286,7 +300,6 @@ h1 {
 .pricefree {
 	padding: 3vw 2vw;
 	border-radius: 1.5vw;
-	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
 	text-align: center;
 	padding: 4.5vw 2vw;
 	line-height: 1.5em;
@@ -294,14 +307,14 @@ h1 {
 	z-index: 1;
 	font-size: 2vw;
 	color: #A86B4C;
-    border: solid 0.25vw #a86b4d;
+    border: solid 0.25vw #A86B4C;
 }
 
 .price1, .price2, .price3 {
 	padding: 2vw 2vw;
 	border-radius: 1.5vw;
-	box-shadow: 0.5vw 0.5vw 0.1vw 0.1vw rgba(186,139,107,0.1);
-    border: solid 0.25vw #a86b4d;
+	/* box-shadow: .3vw .3vw 0.1vw 0.1vw rgba(186,139,107,0.1); */
+    border: solid 0.25vw #A86B4C;
 }
 
 span {
@@ -309,6 +322,33 @@ span {
 	color: #bb7343;
 }
 
+/* .pricefree:hover {
+    border: solid 0.25vw rgba(27,104,129,1);
+	color: rgba(27,104,129,1);
+}
+
+.price1:hover {
+    border: solid 0.25vw rgba(27,104,129,1);
+	color: rgba(27,104,129,1);
+}
+
+.price2:hover {
+    border: solid 0.25vw rgba(27,104,129,1);
+	color: rgba(27,104,129,1);
+}
+
+.price3:hover {
+    border: solid 0.25vw rgba(27,104,129,1);
+	color: rgba(27,104,129,1);
+}
+
+.price p:hover {
+	color: rgba(27,104,129,1);
+}
+
+.price span:hover {
+	color: rgba(27,104,129,1);
+} */
 
 
 /*Слайдер начало*/
