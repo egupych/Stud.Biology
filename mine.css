@@ -87,7 +87,7 @@
   /*Обнуление*/
   
   * {
-	color: black;
+	color: rgb(15, 15, 15);
 	cursor: none;
   }
 
@@ -293,7 +293,7 @@ h1 {
 
 .price p {
 	padding: 0;
-	color: #A86B4C;
+	color: #151515;
 }
 
 
@@ -306,20 +306,20 @@ h1 {
 	position: relative;
 	z-index: 1;
 	font-size: 2vw;
-	color: #A86B4C;
-    border: solid 0.25vw #A86B4C;
+	color: #151515;
+    border: solid 0.2vw #151515;
 }
 
 .price1, .price2, .price3 {
 	padding: 2vw 2vw;
 	border-radius: 1.5vw;
 	/* box-shadow: .3vw .3vw 0.1vw 0.1vw rgba(186,139,107,0.1); */
-    border: solid 0.25vw #A86B4C;
+    border: solid 0.2vw #151515;
 }
 
 span {
 	font-size: 4vw;
-	color: #bb7343;
+	color: #151515;
 }
 
 /* .pricefree:hover {
@@ -443,10 +443,10 @@ footer {
 
 .cursor1 {
 	position: fixed;
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
-	background: #d4d4d48c;
+	background: #b9b9b98c;
 	transform: translate(-50%,-50%);
 	pointer-events: none;
 	z-index: 100;
@@ -455,10 +455,10 @@ footer {
 
 .cursor2 {
 	position: fixed;
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
-	background: #d4d4d48c;
+	background: #b9b9b98c;
 	transition: 110ms;
 	transform: translate(-50%,-50%);
 	pointer-events: none;
@@ -467,23 +467,23 @@ footer {
 
 .cursor3 {
 	position: fixed;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background: #e7e7e725;
 	transform: translate(-50%,-50%);
 	pointer-events: none;
 	z-index: 99;
-	transition: 200ms;
+	transition: 120ms;
 }
 
 .cursor4 {
 	position: fixed;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background: #e7e7e725;
-	transition: 210ms;
+	transition: 130ms;
 	transform: translate(-50%,-50%);
 	pointer-events: none;
 	z-index: 99;
@@ -551,11 +551,11 @@ p {
 }
 
 .price p{
-	color: black;
+	color: rgb(15, 15, 15);
 }
 
 .price p{
-	color: black;
+	color: rgb(15, 15, 15);
 }
 
 .slide h3 {
