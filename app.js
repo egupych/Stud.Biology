@@ -62,30 +62,46 @@ function setScrollIntoView3Options(top) {
 	});
 }
 
+function setScrollIntoView4(top) {
+	const themes = document.querySelector('.themes');
+	themes.scrollIntoView(top);
+}
 
-const cursor1 = document.querySelector(".cursor1");
-document.addEventListener("mousemove", (e) => {
-  cursor1.style.left= e.pageX+"px";
-  cursor1.style.top= e.pageY+"px";
-})
+function setScrollIntoView4Options(top) {
+	const themes = document.querySelector('.themes');
+	themes.scrollIntoView({
+		//"start", "center", "end" или "nearest". По умолчанию "center".
+		block: "start",
+		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
 
-const cursor2 = document.querySelector(".cursor2");
-document.addEventListener("mousemove", (e) => {
-  cursor2.style.left= e.pageX+"px";
-  cursor2.style.top= e.pageY+"px";
-})
 
-const cursor3 = document.querySelector(".cursor3");
-document.addEventListener("mousemove", (e) => {
-  cursor3.style.left= e.pageX+"px";
-  cursor3.style.top= e.pageY+"px";
-})
+// const cursor1 = document.querySelector(".cursor1");
+// document.addEventListener("mousemove", (e) => {
+//   cursor1.style.left= e.pageX+"px";
+//   cursor1.style.top= e.pageY+"px";
+// })
 
-const cursor4 = document.querySelector(".cursor4");
-document.addEventListener("mousemove", (e) => {
-  cursor4.style.left= e.pageX+"px";
-  cursor4.style.top= e.pageY+"px";
-})
+// const cursor2 = document.querySelector(".cursor2");
+// document.addEventListener("mousemove", (e) => {
+//   cursor2.style.left= e.pageX+"px";
+//   cursor2.style.top= e.pageY+"px";
+// })
+
+// const cursor3 = document.querySelector(".cursor3");
+// document.addEventListener("mousemove", (e) => {
+//   cursor3.style.left= e.pageX+"px";
+//   cursor3.style.top= e.pageY+"px";
+// })
+
+// const cursor4 = document.querySelector(".cursor4");
+// document.addEventListener("mousemove", (e) => {
+//   cursor4.style.left= e.pageX+"px";
+//   cursor4.style.top= e.pageY+"px";
+// })
 
 
 
