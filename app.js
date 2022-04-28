@@ -14,6 +14,22 @@ function clearActiveClasses() {
   });
 }
 
+function setScrollIntoView5(top) {
+	const offer = document.querySelector('.offer');
+	offer.scrollIntoView(top);
+}
+
+function setScrollIntoView5Options(top) {
+	const offer = document.querySelector('.offer');
+	offer.scrollIntoView({
+		//"start", "center", "end" или "nearest". По умолчанию "center".
+		block: "start",
+		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
 function setScrollIntoView1(top) {
 	const me = document.querySelector('.me');
 	me.scrollIntoView(top);
