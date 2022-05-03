@@ -121,6 +121,7 @@ header {
 	justify-content: center; 
 }
 
+
 nav {
 	font-size: 1.2vw;
 	height: 3.2vw;
@@ -139,9 +140,11 @@ nav {
 	flex-flow: column;
 	justify-content: space-evenly;
 	margin-top: 3.2vw;
-	background: linear-gradient(-45deg, #BA8969, #A86C4A, #A86C4A, #C08869);
-	background-size: 400% 400%;
-	animation: gradient 19s ease infinite;
+	background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
 }
 
 @keyframes gradient {
@@ -158,7 +161,7 @@ nav {
 
   
 .photo {
-	width: 40%;
+	width: 38%;
 	margin-top: 3.2vw;
 }
 
@@ -256,11 +259,11 @@ h1 {
 
 	width: 100%;
 	display: flex;
-	padding: 0 5vw;
+	padding: 0 1vw;
 }
 
 .slidephoto {
-	height: 30vw;
+	height: 40vw;
 	margin: 0 1vw;
 	flex: 1;
 	background-size: cover;
