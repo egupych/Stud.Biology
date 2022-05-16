@@ -140,11 +140,11 @@ nav {
 	flex-flow: column;
 	justify-content: space-evenly;
 	margin-top: 3.2vw;
-	background: rgb(2,0,36);
-	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: rgb(14,14,14);
+	/*background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
 	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);*/
 }
 
 @keyframes gradient {
