@@ -1,3 +1,4 @@
+//Анимация слайдов карусели
 const slides = document.querySelectorAll(".slide");
 
 for (const slide of slides) {
@@ -14,22 +15,8 @@ function clearActiveClasses() {
   });
 }
 
-function setScrollIntoView5(top) {
-	const offer = document.querySelector('.offer');
-	offer.scrollIntoView(top);
-}
 
-function setScrollIntoView5Options(top) {
-	const offer = document.querySelector('.offer');
-	offer.scrollIntoView({
-		//"start", "center", "end" или "nearest". По умолчанию "center".
-		block: "start",
-		//"start", "center", "end" или "nearest". По умолчанию "nearest".
-		inline: "nearest",
-		behavior: "smooth"
-	});
-}
-
+//Анимация прокрутки до якоря
 function setScrollIntoView1(top) {
 	const me = document.querySelector('.me');
 	me.scrollIntoView(top);
@@ -38,9 +25,7 @@ function setScrollIntoView1(top) {
 function setScrollIntoView1Options(top) {
 	const me = document.querySelector('.me');
 	me.scrollIntoView({
-		//"start", "center", "end" или "nearest". По умолчанию "center".
 		block: "start",
-		//"start", "center", "end" или "nearest". По умолчанию "nearest".
 		inline: "nearest",
 		behavior: "smooth"
 	});
@@ -54,9 +39,7 @@ function setScrollIntoView2(top) {
 function setScrollIntoView2Options(top) {
 	const lesson = document.querySelector('.lesson');
 	lesson.scrollIntoView({
-		//"start", "center", "end" или "nearest". По умолчанию "center".
 		block: "start",
-		//"start", "center", "end" или "nearest". По умолчанию "nearest".
 		inline: "nearest",
 		behavior: "smooth"
 	});
@@ -70,9 +53,7 @@ function setScrollIntoView3(top) {
 function setScrollIntoView3Options(top) {
 	const boxprice = document.querySelector('.boxprice');
 	boxprice.scrollIntoView({
-		//"start", "center", "end" или "nearest". По умолчанию "center".
 		block: "start",
-		//"start", "center", "end" или "nearest". По умолчанию "nearest".
 		inline: "nearest",
 		behavior: "smooth"
 	});
@@ -86,9 +67,21 @@ function setScrollIntoView4(top) {
 function setScrollIntoView4Options(top) {
 	const themes = document.querySelector('.themes');
 	themes.scrollIntoView({
-		//"start", "center", "end" или "nearest". По умолчанию "center".
 		block: "start",
-		//"start", "center", "end" или "nearest". По умолчанию "nearest".
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
+function setScrollIntoView5(top) {
+	const offer = document.querySelector('.offer');
+	offer.scrollIntoView(top);
+}
+
+function setScrollIntoView5Options(top) {
+	const offer = document.querySelector('.offer');
+	offer.scrollIntoView({
+		block: "start",
 		inline: "nearest",
 		behavior: "smooth"
 	});
@@ -119,6 +112,8 @@ function setScrollIntoView4Options(top) {
 //   cursor4.style.top= e.pageY+"px";
 // })
 
+
+// Анимация появлении текста, фото
 const animItems = document.querySelectorAll("._anim-items");
 
 if (animItems.length>0) {
@@ -138,9 +133,10 @@ if (animItems.length>0) {
 			if ((scrollY> animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
 				animItem.classList.add('_active');
 			}  else {
-				animItem.classList.remove('_active');
+				if (!animItem.classList.contains('_anim-no')){
+					animItem.classList.remove('_active');
+				}
 			}
-
 		}
 	}
 
@@ -150,7 +146,30 @@ if (animItems.length>0) {
 			scrollTop = window.scrollY || document.documentElement.scrollTop;
 		return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
 	}
-	animOnScroll();
+	setTimeout(()=>{
+		animOnScroll();
+	},300);
+
 }
 
+
+// //Инерция скрола (пока не работает)
+// let y = 0
+
+// document.body.addEventListener('wheel', (e) => {
+//     const height = document.body.offsetHeight
+
+//     y = y + e.wheelDeltaY
   
+//     if(y < -height + window.innerHeight) {
+//       y = -height + window.innerHeight
+//     }
+  
+//     if(y > 0) {
+//       y = 0
+//     }
+  
+//     const tr = `translateY(${y}px)`
+//     document.body.style.transform = tr
+
+// })
