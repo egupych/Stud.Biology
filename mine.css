@@ -515,6 +515,44 @@ footer {
 }
 
 
+.svg path {
+  height: 2vw;
+  fill: transparent;
+  stroke-width: 30;
+  stroke: #fff;
+  stroke-dasharray: 1550;
+  stroke-dashoffset: 0;
+  	transition: all 0.5s ease 0s;
+}
+
+footer:hover .svg path {
+  animation: animate-svg 4s linear forwards
+}
+
+@keyframes animate-svg
+{
+   0%
+  {
+    stroke-dashoffset: 0;
+  }
+   40%
+  {
+    stroke-dashoffset: 1550;
+  }
+   80%
+  {
+    stroke-dashoffset: 3100;
+    fill:transparent;
+  }
+   100%
+  {
+    stroke-dashoffset: 3100;
+    fill:#fff;
+  }
+}
+
+
+
 ::-webkit-scrollbar {
 	width: 4px;
 	z-index: 4;
