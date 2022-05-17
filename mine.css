@@ -736,7 +736,10 @@ p {
 
 footer {
 	height: 18vw;
-	font-size: 4vw;
+}
+
+.footerlink {
+	font-size: 2vw;
 }
 
 
