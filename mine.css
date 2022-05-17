@@ -680,7 +680,8 @@ h2{
 }
 
 .slidephoto {
-	height: 40vw;
+	height: 36vw;
+	margin: 0 2vw;
 }
 
 .slide {
