@@ -1,4 +1,7 @@
+//::::::::::::::::::::::::::::::::::::::::::::::::::
 //Анимация слайдов карусели
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+
 const slides = document.querySelectorAll(".slide");
 
 for (const slide of slides) {
@@ -15,8 +18,10 @@ function clearActiveClasses() {
   });
 }
 
-
+//::::::::::::::::::::::::::::::::::::::::::::::::::
 //Анимация прокрутки до якоря
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+
 function setScrollIntoView1(top) {
 	const me = document.querySelector('.me');
 	me.scrollIntoView(top);
@@ -87,6 +92,10 @@ function setScrollIntoView5Options(top) {
 	});
 }
 
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+// Кастомный курсор
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 // const cursor1 = document.querySelector(".cursor1");
 // document.addEventListener("mousemove", (e) => {
@@ -113,7 +122,10 @@ function setScrollIntoView5Options(top) {
 // })
 
 
+//::::::::::::::::::::::::::::::::::::::::::::::::::
 // Анимация появлении текста, фото
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+
 const animItems = document.querySelectorAll("._anim-items");
 
 if (animItems.length>0) {
@@ -153,7 +165,10 @@ if (animItems.length>0) {
 }
 
 
-// //Инерция скрола (пока не работает)
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+// Инерция скрола страницы (доработать)
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+
 // let y = 0
 
 // document.body.addEventListener('wheel', (e) => {
