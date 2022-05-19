@@ -278,7 +278,7 @@ p {
 li {
 	padding-left: 6vw;
 	padding-right: 6vw;
-	padding-bottom: 2vw;
+	padding-bottom: 1.8vw;
 	transform: translate(-100px, 0%);
 	opacity: 0;
 	transition: all 0.5s ease 0s;
@@ -293,7 +293,7 @@ li._active {
 
 h2{
 	padding-top: 5vw;
-	padding-bottom: 3vw;
+	padding-bottom: 2vw;
 	font-size: 1.8vw;
 	padding-left: 6vw;
 	padding-right: 6vw;
