@@ -279,9 +279,9 @@ li {
 	padding-left: 6vw;
 	padding-right: 6vw;
 	padding-bottom: 1.8vw;
-	transform: translate(0px, 3vw);
+	transform: translate(0px, 1.5vw);
 	opacity: 0;
-	transition: all 0.5s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 
 
@@ -310,6 +310,7 @@ h2{
 	padding: 2vw 3.5vw 0vw 3.5vw;
 }
 
+
 .slidephoto {
 	height: 36vw;
 	margin: 0 1vw;
@@ -323,6 +324,8 @@ h2{
 	transition: all 0.8 ease 0s; */
 	background-color: rgb(239, 239, 239); /*пока грузится изображение*/
 }
+
+
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Порядок работы                                   */
@@ -338,9 +341,9 @@ h2{
 }
 
 .step1 {
-  transform: translate(0px, 2vw);
+  transform: translate(0px, 1vw);
 	opacity: 0;
-	transition: all 0.4s ease 0s;
+	transition: all 0.2s ease 0s;
 }
 
 .step1._active {
@@ -349,9 +352,9 @@ h2{
 }
 
 .step2 {
-  transform: translate(0px, 3vw);
+  transform: translate(0px, 2vw);
 	opacity: 0;
-	transition: all 0.6s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 
 .step2._active {
@@ -360,9 +363,9 @@ h2{
 }
 
 .step3 {
-  transform: translate(0px, 4vw);
+  transform: translate(0px, 3vw);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.6s ease 0s;
 }
 
 .step3._active {
@@ -371,9 +374,9 @@ h2{
 }
 
 .step4 {
-  transform: translate(0px, 5vw);
+  transform: translate(0px, 4vw);
 	opacity: 0;
-	transition: all 1s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 
 .step4._active {
@@ -382,9 +385,9 @@ h2{
 }
 
 .step5 {
-  transform: translate(0px, 6vw);
+  transform: translate(0px, 5vw);
 	opacity: 0;
-	transition: all 1.2s ease 0s;
+	transition: all 1s ease 0s;
 }
 
 .step5._active {
@@ -393,52 +396,45 @@ h2{
 }
 
 .arrow1 {
-  transform: translate(-2vw, 0vw);
+  transform: translate(0px, 6vw);
 	opacity: 0;
-	transition: all 0.4s ease 0s;
+	transition: all 1.2s ease 0s;
 }
 
 .arrow1._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+
 .arrow2 {
-  transform: translate(-3vw, 0vw);
+  transform: translate(0px, 7vw);
 	opacity: 0;
-	transition: all 0.6s ease 0s;
+	transition: all 1.4s ease 0s;
 }
 
 .arrow2._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+
 .arrow3 {
-  transform: translate(-4vw, 0vw);
+  transform: translate(0px, 8vw);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 1.6s ease 0s;
 }
 
 .arrow3._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+
 .arrow4 {
-  transform: translate(-5vw, 0vw);
+  transform: translate(0px, 9vw);
 	opacity: 0;
-	transition: all 1s ease 0s;
+	transition: all 1.8s ease 0s;
 }
 
 .arrow4._active {
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-.arrow5 {
-  transform: translate(-6vw, 0vw);
-	opacity: 0;
-	transition: all 1.2s ease 0s;
-}
-
-.arrow5._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
