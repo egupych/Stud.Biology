@@ -79,13 +79,27 @@ function setScrollIntoView4Options(top) {
 }
 
 function setScrollIntoView5(top) {
-	const offer = document.querySelector('.offer');
-	offer.scrollIntoView(top);
+	const header = document.querySelector('header');
+	header.scrollIntoView(top);
 }
 
 function setScrollIntoView5Options(top) {
-	const offer = document.querySelector('.offer');
-	offer.scrollIntoView({
+	const header = document.querySelector('header');
+	header.scrollIntoView({
+		block: "start",
+		inline: "nearest",
+		behavior: "smooth"
+	});
+}
+
+function setScrollIntoView6(top) {
+	const header = document.querySelector('header');
+	header.scrollIntoView(top);
+}
+
+function setScrollIntoView6Options(top) {
+	const header = document.querySelector('header');
+	header.scrollIntoView({
 		block: "start",
 		inline: "nearest",
 		behavior: "smooth"
