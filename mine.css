@@ -281,15 +281,13 @@ li {
 	padding-bottom: 1.8vw;
 	transform: translate(0px, 1.5vw);
 	opacity: 0;
-	transition: all 0.4s ease 0s;
+	transition: all 0.3s ease 0s;
 }
-
 
 li._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
-
 
 h2{
 	padding-top: 5vw;
@@ -326,7 +324,6 @@ h2{
 }
 
 
-
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Порядок работы                                   */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -336,7 +333,7 @@ h2{
 	padding: 3vw 2vw 3vw 2vw ;
 	display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 	flex-wrap: wrap;
 }
 
@@ -465,7 +462,6 @@ h2{
 	margin-left: auto;
 	margin-right: auto;
 }
-
 
 .step p {
 	padding: 2vw  2vw 0 2vw ;
