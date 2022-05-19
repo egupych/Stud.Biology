@@ -335,107 +335,107 @@ h2{
 	margin: 0vw 1vw;
 	padding: 3vw 2vw 3vw 2vw ;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
 	flex-wrap: wrap;
 }
 
 .step1 {
-  transform: translate(0px, 1vw);
-	opacity: 0;
-	transition: all 0.2s ease 0s;
-}
-
-.step1._active {
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-.step2 {
-  transform: translate(0px, 2vw);
+  transform: translate(-1vw, 0vw);
 	opacity: 0;
 	transition: all 0.4s ease 0s;
 }
 
-.step2._active {
-	transform: translate(0px, 0px);
+.step1._active {
+	transform: translate(0vw, 0vw);
 	opacity: 1;
 }
 
-.step3 {
-  transform: translate(0px, 3vw);
-	opacity: 0;
-	transition: all 0.6s ease 0s;
-}
-
-.step3._active {
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-.step4 {
-  transform: translate(0px, 4vw);
+.step2 {
+  transform: translate(-2vw, 0vw);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
 }
 
-.step4._active {
-	transform: translate(0px, 0px);
+.step2._active {
+	transform: translate(0vw, 0vw);
 	opacity: 1;
 }
 
-.step5 {
-  transform: translate(0px, 5vw);
-	opacity: 0;
-	transition: all 1s ease 0s;
-}
-
-.step5._active {
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-.arrow1 {
-  transform: translate(0px, 6vw);
+.step3 {
+  transform: translate(-3vw, 0vw);
 	opacity: 0;
 	transition: all 1.2s ease 0s;
 }
 
-.arrow1._active {
-	transform: translate(0px, 0px);
+.step3._active {
+	transform: translate(0vw, 0vw);
 	opacity: 1;
 }
 
-.arrow2 {
-  transform: translate(0px, 7vw);
-	opacity: 0;
-	transition: all 1.4s ease 0s;
-}
 
-.arrow2._active {
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-.arrow3 {
-  transform: translate(0px, 8vw);
+.step4 {
+  transform: translate(-4vw, 0vw);
 	opacity: 0;
 	transition: all 1.6s ease 0s;
 }
 
+.step4._active {
+	transform: translate(0vw, 0vw);
+	opacity: 1;
+}
+
+.step5 {
+  transform: translate(-5vw, 0vw);
+	opacity: 0;
+	transition: all 2s ease 0s;
+}
+
+.step5._active {
+	transform: translate(0vw, 0vw);
+	opacity: 1;
+}
+.arrow1 {
+  transform: translate(-1vw, 0vw);
+	opacity: 0;
+	transition: all 0.6s ease 0s;
+}
+
+.arrow1._active {
+	transform: translate(0vw, 0vw);
+	opacity: 1;
+}
+
+.arrow2 {
+  transform: translate(-2vw, 0vw);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.arrow2._active {
+	transform: translate(0vw, 0vw);
+	opacity: 1;
+}
+
+.arrow3 {
+  transform: translate(-3vw, 0vw);
+	opacity: 0;
+	transition: all 1.2s ease 0s;
+}
+
 .arrow3._active {
-	transform: translate(0px, 0px);
+	transform: translate(0vw, 0vw);
 	opacity: 1;
 }
 
 .arrow4 {
-  transform: translate(0px, 9vw);
+  transform: translate(-4vw, 0vw);
 	opacity: 0;
-	transition: all 1.8s ease 0s;
+	transition: all 1.6s ease 0s;
 }
 
 .arrow4._active {
-	transform: translate(0px, 0px);
+	transform: translate(0vw, 0vw);
 	opacity: 1;
 }
 
@@ -458,7 +458,9 @@ h2{
 }
 
 .arrow img {
-	width: 2.2vw;
+	padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+	width: 2vw;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
