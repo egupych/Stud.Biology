@@ -239,15 +239,15 @@ h1 {
 	color: white;
 	line-height: 1.5em;
 	font-size: 2.5vw;
-	transform: translate(0px, 50%);
+/* 	transform: translate(0px, 50%);
 	opacity: 0;
-	transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s; */
 }
 
-h1._active {
+/* h1._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
-}
+} */
 
 
 .name {
@@ -257,15 +257,15 @@ h1._active {
 	padding-right: 6vw;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	transform: translate(0px, -120%);
+/* 	transform: translate(0px, -120%);
 	opacity: 0;
-	transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s; */
 }
 
-.name._active {
+/* .name._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
-}
+} */
 
 
 p {
@@ -335,6 +335,61 @@ h2{
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+.step1 {
+  transform: translate(0px, 3vw);
+	opacity: 0;
+	transition: all 0.6s ease 0s;
+}
+
+.step1._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.step2 {
+  transform: translate(0px, 3vw);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.step2._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.step3 {
+  transform: translate(0px, 6vw);
+	opacity: 0;
+	transition: all 0.6s ease 0s;
+}
+
+.step3._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.step4 {
+  transform: translate(0px, 9vw);
+	opacity: 0;
+	transition: all 0.9s ease 0s;
+}
+
+.step4._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.step5 {
+  transform: translate(0px, 12vw);
+	opacity: 0;
+	transition: all 1.2s ease 0s;
+}
+
+.step5._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 
 .step img {
