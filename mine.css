@@ -338,7 +338,7 @@ h2{
 }
 
 .step1 {
-  transform: translate(-2vw, 0vw);
+  transform: translate(-4vw, 0vw);
 	opacity: 0;
 	transition: all 0.4s ease 0s;
 }
@@ -349,7 +349,7 @@ h2{
 }
 
 .step2 {
-  transform: translate(-4vw, 0vw);
+  transform: translate(-8vw, 0vw);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
 }
@@ -360,7 +360,7 @@ h2{
 }
 
 .step3 {
-  transform: translate(-6vw, 0vw);
+  transform: translate(-12vw, 0vw);
 	opacity: 0;
 	transition: all 1.2s ease 0s;
 }
@@ -372,7 +372,7 @@ h2{
 
 
 .step4 {
-  transform: translate(-8vw, 0vw);
+  transform: translate(-16vw, 0vw);
 	opacity: 0;
 	transition: all 1.6s ease 0s;
 }
@@ -383,7 +383,7 @@ h2{
 }
 
 .step5 {
-  transform: translate(-10vw, 0vw);
+  transform: translate(-20vw, 0vw);
 	opacity: 0;
 	transition: all 2s ease 0s;
 }
@@ -393,7 +393,7 @@ h2{
 	opacity: 1;
 }
 .arrow1 {
-  transform: translate(-2vw, 0vw);
+  transform: translate(-6vw, 0vw);
 	opacity: 0;
 	transition: all 0.6s ease 0s;
 }
@@ -404,7 +404,7 @@ h2{
 }
 
 .arrow2 {
-  transform: translate(-4vw, 0vw);
+  transform: translate(-8vw, 0vw);
 	opacity: 0;
 	transition: all 0.8s ease 0s;
 }
@@ -415,7 +415,7 @@ h2{
 }
 
 .arrow3 {
-  transform: translate(-6vw, 0vw);
+  transform: translate(-12vw, 0vw);
 	opacity: 0;
 	transition: all 1.2s ease 0s;
 }
