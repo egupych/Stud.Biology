@@ -103,6 +103,7 @@ body {
 	font-family: "Nunito", sans-serif;
 	font-size: 1.4vw;
 	transition: transform 1000ms;
+	user-select: none; /* Не даёт взаимодействовать с текстом */
 }
 
 
