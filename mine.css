@@ -426,7 +426,7 @@ h2{
 }
 
 .arrow4 {
-  transform: translate(-8vw, 0vw);
+  transform: translate(-16vw, 0vw);
 	opacity: 0;
 	transition: all 1.6s ease 0s;
 }
@@ -455,8 +455,8 @@ h2{
 }
 
 .arrow img {
-	padding-top: 4vw;
-        padding-bottom: 1.5vw;
+	padding-top: 5vw;
+  padding-bottom: 1.5vw;
 	width: 2vw;
 	display: block;
 	margin-left: auto;
