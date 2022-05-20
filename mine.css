@@ -226,6 +226,7 @@ nav {
 	width: 49%;
 	margin-top: 3.2vw;
 	padding:2vw;
+	z-index: 2;
 }
 
 
@@ -477,6 +478,7 @@ h2{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 
 .circles div{
