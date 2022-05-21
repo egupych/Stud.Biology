@@ -110,7 +110,10 @@ body {
 header {
 	display: flex;
 	justify-content: center; 
-	background: #A86C4A;
+	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
+	background-size: 400% 400%;
+	/* animation: gradient 7s ease infinite; */
+	position: relative;
 }
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -223,16 +226,14 @@ nav {
 
   
 .photo {
-	width: 49%;
-	margin-top: 3.2vw;
-	padding:2vw;
-	z-index: 2;
+	width: 51%;
+	margin-top: 1.8vw;
+	padding:2vw 0vw 1.4vw 2vw;
 }
 
 
 h1 {
 	padding-left: 6vw;
-	padding-right: 6vw;
 	color: white;
 	line-height: 1.5em;
 	font-size: 2.5vw;
@@ -303,32 +304,35 @@ h2{
 .photoline {
 	width: 100%;
 	display: flex;
-	padding: 2vw 3.5vw 0vw 3.5vw;
+	padding: 1vw 2vw 0vw 2vw;
 }
 
 
 .slidephoto {
-	height: 36vw;
-	margin: 0 1vw;
+	height: 32vw;
+	margin: 0 1.6vw;
 	flex: 1;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
 	border-radius: 1.5vw;
-	/* transform: scale(0);
-	transition: all 0.8 ease 0s; */
+	transition: all 0.7s;
 	background-color: rgb(243, 243, 243); /*пока грузится изображение*/
 }
 
+ /* .slidephoto:hover {
+	transform: scale(1.1);
+	margin: 0 6vw;
+}  */
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Порядок работы                                   */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 .steps {
-	margin: 0vw 1vw;
-	padding: 3vw 2vw 3vw 2vw ;
+	margin: 0vw 2vw;
+	padding: 2vw 2vw 3vw 2vw ;
 	display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -349,7 +353,7 @@ h2{
 .step2 {
   transform: translate(-8vw, 0vw);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 
 .step2._active {
@@ -360,7 +364,7 @@ h2{
 .step3 {
   transform: translate(-12vw, 0vw);
 	opacity: 0;
-	transition: all 1.2s ease 0s;
+	transition: all 0.6s ease 0s;
 }
 
 .step3._active {
@@ -372,7 +376,7 @@ h2{
 .step4 {
   transform: translate(-16vw, 0vw);
 	opacity: 0;
-	transition: all 1.6s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 
 .step4._active {
@@ -383,7 +387,7 @@ h2{
 .step5 {
   transform: translate(-20vw, 0vw);
 	opacity: 0;
-	transition: all 2s ease 0s;
+	transition: all 1s ease 0s;
 }
 
 .step5._active {
@@ -393,7 +397,7 @@ h2{
 .arrow1 {
   transform: translate(-6vw, 0vw);
 	opacity: 0;
-	transition: all 0.6s ease 0s;
+	transition: all 0.3s ease 0s;
 }
 
 .arrow1._active {
@@ -404,7 +408,7 @@ h2{
 .arrow2 {
   transform: translate(-8vw, 0vw);
 	opacity: 0;
-	transition: all 0.8s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 
 .arrow2._active {
@@ -415,7 +419,7 @@ h2{
 .arrow3 {
   transform: translate(-12vw, 0vw);
 	opacity: 0;
-	transition: all 1.2s ease 0s;
+	transition: all 0.6s ease 0s;
 }
 
 .arrow3._active {
@@ -426,7 +430,7 @@ h2{
 .arrow4 {
   transform: translate(-16vw, 0vw);
 	opacity: 0;
-	transition: all 1.6s ease 0s;
+	transition: all 0.8s ease 0s;
 }
 
 .arrow4._active {
@@ -470,7 +474,6 @@ h2{
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Блок с ценами                                    */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 .circles{
     position: absolute;
     top: 0;
@@ -545,31 +548,6 @@ h2{
     animation-delay: 7s;
 }
 
-.circles div:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles div:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles div:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
 
 @keyframes animate {
 
@@ -588,11 +566,12 @@ h2{
 }
 
 .boxprice {
-	background: linear-gradient(-45deg, #BA8969, #A86C4A, #A86C4A, #C08869);
+	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
 	background-size: 400% 400%;
-	animation: gradient 45s ease infinite;
+	/* animation: gradient 7s ease infinite; */
 	height: 50vw;
-	margin-top: 4vw;
+	margin-top: 1vw;
+	position: relative;
 }
 
 @keyframes gradient {
@@ -745,9 +724,10 @@ footer {
 	text-align: center;
 	margin-top: 3.5vw;
 	justify-content: center;
-	background: linear-gradient(-45deg, #BA8969, #A86C4A, #A86C4A, #C08869);
+	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
 	background-size: 400% 400%;
-	animation: gradient 45s ease infinite;
+	/* animation: gradient 7s ease infinite; */
+	position: relative;
 }
 
 @keyframes gradient {
