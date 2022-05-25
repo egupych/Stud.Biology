@@ -865,7 +865,7 @@ footer:hover .svg path {
 /* Адаптив для теефона                              */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* 576px */
+/* 576px 
 @media screen  and (max-width: 576px) {
 
 	p {
@@ -984,7 +984,6 @@ footer {
 
 
 
-
 /* 
 .cursor1{
 	display: none;
@@ -1000,3 +999,6 @@ footer {
 } */
 
 }
+
+*/
+
