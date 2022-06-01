@@ -110,8 +110,14 @@ body {
 header {
 	display: flex;
 	justify-content: center; 
-	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
-	background-size: 400% 400%;
+	background: rgb(2,0,36);
+background: rgb(2,0,36);
+	background: -moz-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: -webkit-linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	background: linear-gradient(71deg, rgba(2,0,36,1) 0%, rgba(27,104,129,1) 0%, rgba(186,139,107,1) 81%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ba8b6b",GradientType=1);
+/* 	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
+	background-size: 400% 400%; */
 	/* animation: gradient 7s ease infinite; */
 	position: relative;
 }
@@ -728,6 +734,7 @@ footer {
 	background-size: 400% 400%;
 	/* animation: gradient 7s ease infinite; */
 	position: relative;
+	user-select: none;
 }
 
 @keyframes gradient {
