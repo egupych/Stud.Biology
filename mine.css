@@ -103,7 +103,7 @@ body {
 	font-family: "Nunito", sans-serif;
 	font-size: 1.4vw;
 	transition: transform 1000ms;
-	user-select: none; /* Не даёт взаимодействовать с текстом */
+	/*user-select: none;  Не даёт взаимодействовать с текстом */
 }
 
 
@@ -796,7 +796,8 @@ footer:hover .svg path {
 	border-radius: 50%;
 	background: #b9b9b98c;
 	transform: translate(-50%,-50%);
-	pointer-events: none;
+	pointer-events: 
+;
 	z-index: 100;
 	transition: 100ms;
 }
