@@ -382,7 +382,7 @@ h2{
 .step4 {
   transform: translate(-16vw, 0vw);
 	opacity: 0;
-	transition: all cubic-bezier(0.16, 1, 0.3, 1);
+	transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .step4._active {
