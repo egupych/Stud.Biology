@@ -717,7 +717,7 @@ span {
 }
 .slide.active h3 {
 	opacity: 1;
-	transition: opacity 0.5s all 1800ms cubic-bezier(.47,.17,.3,1.06);
+	transition: opacity 2s  cubic-bezier(.47,.17,.3,1.06);
 }
 
 h3 {
