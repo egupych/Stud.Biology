@@ -283,7 +283,7 @@ p {
 li {
 	padding-left: 6vw;
 	padding-right: 6vw;
-	padding-bottom: 1.8vw;
+	padding-bottom: 1.7vw;
 	transform: translate(0px, 1.5vw);
 	opacity: 0;
 	transition: all 0.3s cubic-bezier(.47,.17,.3,1.06);
