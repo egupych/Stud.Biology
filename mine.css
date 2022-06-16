@@ -700,13 +700,16 @@ span {
 	bottom: 2vw;
 	left: 3vw;
 	margin: 0;
-	opacity: 0;
+	transition: all 2s cubic-bezier(.47,.17,.3,1.06);
+   	transform: translate(9vw, 0vw);
+  	opacity: 0;
 }
   
 .slide.active {
 	flex: 10;
 	filter: none;
 	opacity: 1;
+	
 }.price1, .price2, .price3 {
 	padding: 2vw 6vw;
 	border-radius: 1.5vw;
@@ -717,6 +720,7 @@ span {
 .slide.active h3 {
 	opacity: 1;
 	transition: opacity 2s  cubic-bezier(.47,.17,.3,1.06);
+	transform: translate(0vw, 0vw);
 }
 
 h3 {
