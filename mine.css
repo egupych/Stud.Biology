@@ -641,7 +641,7 @@ h2{
 .price1, .price2, .price3 {
 	padding: 2vw 6vw;
 	border-radius: 2.5vw;
-    border: solid 0.2vw #ffffff;
+    border: solid 0.4vw #ffffff;
 	margin-bottom: 4vw;
 	width: 25vw;
 }
