@@ -571,8 +571,8 @@ h2{
 
 }
 
-.boxprice {
-	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
+.boxprice {    
+	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #1b42a7, #ac7151);
 	background-size: 400% 400%;
 	/* animation: gradient 7s ease infinite; */
 	height: 50vw;
