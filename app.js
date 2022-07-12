@@ -26,17 +26,17 @@ function clearActiveClasses() {
 //::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function setScrollIntoView1(top) {
-	const me = document.querySelector('.me');
-	me.scrollIntoView(top);
+  const me = document.querySelector('.me');
+    me.scrollIntoView(top);
 }
 
 function setScrollIntoView1Options(top) {
-	const me = document.querySelector('.me');
-	me.scrollIntoView({
-		block: "start",
-		inline: "nearest",
-		behavior: "smooth"
-	});
+  const me = document.querySelector('.me');
+    me.scrollIntoView({
+      block: "start",
+      inline: "nearest",
+      behavior: "smooth"
+});
 }
 
 function setScrollIntoView2(top) {
@@ -146,24 +146,24 @@ function setScrollIntoView6Options(top) {
 const animItems = document.querySelectorAll("._anim-items");
 
 if (animItems.length>0) {
-	window.addEventListener("scroll", animOnScroll);
-	function animOnScroll() {
-		for (let index = 0; index < animItems.length; index++) {
-			const animItem = animItems [index];
-			const animItemHeight = animItem.offsetHeight;
-			const animItemOffset = offset(animItem).top;
-			const animStart = 1;
+  window.addEventListener("scroll", animOnScroll);
+    function animOnScroll() {
+      for (let index = 0; index < animItems.length; index++) {
+	const animItem = animItems [index];
+	const animItemHeight = animItem.offsetHeight;
+	const animItemOffset = offset(animItem).top;
+	const animStart = 1;
 		
-			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-			if (animItemHeight > window.innerHeight) {
-				animItemPoint = window.innerHeight - window.innerHeight / animStart;
-			}
+	let animItemPoint = window.innerHeight - animItemHeight / animStart;
+	if (animItemHeight > window.innerHeight) {
+	  animItemPoint = window.innerHeight - window.innerHeight / animStart;
+	  }
 
-			if ((scrollY> animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
-				animItem.classList.add('_active');
-			}  else {
-				if (!animItem.classList.contains('_anim-no')){
-					animItem.classList.remove('_active');
+	if ((scrollY> animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
+	  animItem.classList.add('_active');
+	  }  else {
+	if (!animItem.classList.contains('_anim-no')){
+	  animItem.classList.remove('_active');
 				}
 			}
 		}
