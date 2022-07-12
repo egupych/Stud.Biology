@@ -732,9 +732,8 @@ footer {
 	text-align: center;
 	margin-top: 3.5vw;
 	justify-content: center;
-	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #A86C4A, #ac7151);
+	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #1b42a7, #ac7151);
 	background-size: 400% 400%;
-	/*     background: linear-gradient(-45deg, #BA8969, #9c5f3b, #9592da, #0f1034); */
 	position: relative;
 	user-select: none;
 }
