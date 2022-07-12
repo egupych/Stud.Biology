@@ -102,7 +102,6 @@
 body {
 	font-family: "Nunito", sans-serif;
 	font-size: 1.4vw;
-/* 	transition: transform 1000ms; убрать */
 	/*user-select: none;  Не даёт взаимодействовать с текстом */
 }
 
@@ -195,8 +194,8 @@ nav {
 	bottom: 0.7vw;
 	right: 0;
 	width: 0%;
-	    height: 2px;
-	    background: rgb(255 255 255);
+    height: 2px;
+    background: rgb(255 255 255);
 	transition: all 0.32s cubic-bezier(.47,.17,.3,1);
 }
 
@@ -571,8 +570,8 @@ h2{
 
 }
 
-.boxprice {    
-	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #1b42a7, #ac7151);
+.boxprice {
+   	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #1b42a7, #ac7151);
 	background-size: 400% 400%;
 	/* animation: gradient 7s ease infinite; */
 	height: 50vw;
@@ -641,7 +640,7 @@ h2{
 .price1, .price2, .price3 {
 	padding: 2vw 6vw;
 	border-radius: 2.5vw;
-    border: solid 0.4vw #ffffff;
+    border: solid 0.25vw #ffffff;
 	margin-bottom: 4vw;
 	width: 25vw;
 }
@@ -710,13 +709,8 @@ span {
 	filter: none;
 	opacity: 1;
 	
-}.price1, .price2, .price3 {
-	padding: 2vw 6vw;
-	border-radius: 2.5vw;
-    border: solid 0.2vw #ffffff;
-	margin-bottom: 4vw;
-	width: 25vw;
 }
+
 .slide.active h3 {
 	opacity: 1;
 	transform: translate(0vw, 0vw);
