@@ -576,6 +576,7 @@ h2{
 	/* animation: gradient 7s ease infinite; */
 	height: 50vw;
 	position: relative;
+	display:none;
 }
 
 @keyframes gradient {
