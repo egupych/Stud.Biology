@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Обнуление                                        */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -576,7 +594,6 @@ h2{
 	/* animation: gradient 7s ease infinite; */
 	height: 50vw;
 	position: relative;
-
 }
 
 @keyframes gradient {
@@ -621,7 +638,6 @@ h2{
 	text-align: center;
 	align-items: center;
 	margin-bottom: 4vw;
-	padding-top: 5vw;
 	justify-content: center;
 	font-size: 2vw;
 /* 	line-height: 3vw; */
@@ -853,23 +869,20 @@ footer:hover .svg path {
 }
 
 ::-webkit-scrollbar {
-	width: 4px;
+	width: 0.6vw;
 	z-index: 4;
-	display: none; /*полоса прокрутки*/
-	}
-	
-::-webkit-scrollbar-track {
-	background-color: #ffffff00;
-	border-radius: 2px;
-	z-index: 4;
-	}
-	
-::-webkit-scrollbar-thumb {
-	border-radius: 2px;
-	background: linear-gradient(180deg, #00c6fb, #bb7343);
-	z-index: 4;
-	}
-
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: linear-gradient(229deg, rgb(27 104 129 / 62%), #01abab);
+	z-index: 40;
+	cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background-color: #ffffff;
+	z-index: 40;
+  }
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Адаптив для теефона                              */
