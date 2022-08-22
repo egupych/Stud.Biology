@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Nunito';
-    src: url('Nunito-Regular.woff2') format('woff2');
+    src: local('Nunito'), url('Nunito-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Dancing Script';
-    src: url('DancingScript-SemiBold.woff2') format('woff2');
+    src: local('Dancing Script'), url('DancingScript-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
