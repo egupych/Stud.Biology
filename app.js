@@ -165,7 +165,7 @@ if (animItems.length>0) {
 const slides = document.querySelectorAll(".slide");
 
 for (const slide of slides) {
-  slide.addEventListener("mouseover", () => {
+  slide.addEventListener("click", () => {
     clearActiveClasses();
     
     slide.classList.add("active");
