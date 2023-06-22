@@ -317,6 +317,7 @@ li._active {
 
 h2{
 	padding-top: 5vw;
+	padding-bottom: 2vw;
 	font-size: 1.9vw;
 	padding-left: 6vw;
 	padding-right: 6vw;
@@ -595,7 +596,7 @@ h2{
    	background: linear-gradient(-45deg, #BA8969, #9c5f3b, #1b42a7, #ac7151);
 	background-size: 400% 400%;
 	/* animation: gradient 7s ease infinite; */
-	height: 25vw;
+	height: 28vw;
 	position: relative;
 }
 
